@@ -8,8 +8,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="py-8 z-10">
-      <div className="container px-4 mx-auto relative text-sm">
+    <nav className="max-w-8xl py-8 px-20 mx-auto z-10">
+      <div className="container mx-auto relative text-sm">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">

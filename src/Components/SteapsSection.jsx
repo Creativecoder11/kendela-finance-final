@@ -1,81 +1,66 @@
 import React from "react";
+import StockImage from "../assets/Images/get start image.svg";
+import number1 from "../assets/Icon/Number 1.svg";
+import number2 from "../assets/Icon/Number 2.svg";
+import number3 from "../assets/Icon/Number 3.svg";
 
 export default function SteapsSection() {
   return (
-    <section className="py-16 px-4 max-w-6xl mx-auto">
-      <h1 className="text-4xl md:text-5xl font-bold text-center mb-12">
+    <section className="py-20 px-4 max-w-6xl mx-auto">
+      <h1 className="font-secondary text-center text-3xl md:text-[56px] tracking-[-2px] mb-4 md:mb-6">
         Get Started in Minutes, Not Days
       </h1>
 
-      <div className="flex flex-col lg:flex-row items-center gap-8">
+      <div className="flex flex-col lg:flex-row items-center gap-8 py-15">
         {/* Left side - Image */}
-        <div className="w-full lg:w-1/2">
+        <div className="w-full lg:w-1/2 ">
           <div className="rounded-lg overflow-hidden">
             <img
-              src="/api/placeholder/600/600"
+              src={StockImage}
               alt="Person smiling while using smartphone"
-              className="w-full object-cover"
+              className="w-full h-[620px] object-cover"
             />
           </div>
         </div>
 
         {/* Right side - Steps */}
-        <div className="w-full lg:w-1/2 space-y-10">
+        <div className="w-full lg:w-1/2 space-y-6 pl-10">
           {/* Step 1 */}
-          <div className="flex items-start gap-4">
-            <div className="flex-shrink-0">
-              <div className="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold">
-                1
-              </div>
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold mb-2">Quick Sign-Up</h3>
-              <p className="text-gray-600 mb-1">
-                <span className="font-medium">Action:</span> Enter your email
-                and create your account
-              </p>
-              <p className="text-gray-600">
-                <span className="font-medium">Time:</span> 30 seconds
-              </p>
-            </div>
+
+          <div>
+            <img className="mb-4" src={number1} alt="" srcset="" />
+            <h3 className="text-2xl font-secondary font-bold mb-2">Quick Sign-Up</h3>
+            <p className="text-[#6C737F] font-primary">
+              <span className="font-medium">Action:</span> Enter your email and
+              create your account
+            </p>
+            <p className="text-[#6C737F] font-primary">
+              <span className="font-medium">Time:</span> 30 seconds
+            </p>
           </div>
 
           {/* Step 2 */}
-          <div className="flex items-start gap-4">
-            <div className="flex-shrink-0">
-              <div className="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold">
-                2
-              </div>
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold mb-2">Smart Verification</h3>
-              <p className="text-gray-600 mb-1">
-                <span className="font-medium">Action:</span> Verify your
-                identity with secure, AI-powered authentication
-              </p>
-              <p className="text-gray-600">
-                <span className="font-medium">Time:</span> 2 minutes
-              </p>
-            </div>
+          <div>
+            <img className="mb-4" src={number2} alt="" srcset="" />
+            <h3 className="text-2xl font-secondary font-bold mb-2">Smart Verification</h3>
+            <p className="text-[#6C737F] font-primary">
+              <span className="font-medium">Action:</span> Verify your identity with secure, AI-powered authentication
+            </p>
+            <p className="text-[#6C737F] font-primary">
+              <span className="font-medium">Time:</span> 2 minutes
+            </p>
           </div>
 
           {/* Step 3 */}
-          <div className="flex items-start gap-4">
-            <div className="flex-shrink-0">
-              <div className="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold">
-                3
-              </div>
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold mb-2">Account Activation</h3>
-              <p className="text-gray-600 mb-1">
-                <span className="font-medium">Action:</span> Select your
-                services and start using Kandela right away.
-              </p>
-              <p className="text-gray-600">
-                <span className="font-medium">Time:</span> 1 minute
-              </p>
-            </div>
+          <div>
+            <img className="mb-4" src={number3} alt="" srcset="" />
+            <h3 className="text-2xl font-secondary font-bold mb-2">Account Activation</h3>
+            <p className="text-[#6C737F] mb">
+              <span className="font-medium font-primary">Action:</span> Select your services and start using Kandela right away. 
+            </p>
+            <p className="text-[#6C737F]">
+              <span className="font-medium font-primary">Time:</span> 1 minute
+            </p>
           </div>
         </div>
       </div>

@@ -38,27 +38,32 @@ const FaqSection = () => {
   };
 
   return (
-    <div className="bg-white p-4 md:p-8">
+    <div className="py-20">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl md:text-5xl font-bold text-center mb-12 mt-8">
+        <h1 className="font-secondary text-center text-3xl md:text-[56px] tracking-[-2px] mb-4 md:mb-6">
           Frequently Asked Questions
         </h1>
-        <div className="mt-6">
+        <div className="mt-16">
           {faqs.map((faq, index) => (
-            <div key={index} className="border-b border-gray-200 py-4">
+            <div
+              key={index}
+              className={`border-b border-gray-200 py-6 px-10 transition-colors duration-300 ${
+                openIndex === index ? "bg-[#F8F8F8] border-none rounded-3xl" : "bg-white"
+              }`}
+            >
               <button
                 className="flex w-full justify-between items-center text-left focus:outline-none"
                 onClick={() => toggleFAQ(index)}
               >
                 <h3
-                  className={`text-lg md:text-xl font-medium transition-colors duration-300 ${
+                  className={`text-lg md:text-2xl font-medium transition-colors duration-300 ${
                     openIndex === index ? "text-purple-500" : "text-gray-900"
                   }`}
                 >
                   {faq.question}
                 </h3>
                 <span
-                  className={`ml-6 flex-shrink-0 transform transition-transform duration-300 ${
+                  className={`ml-6 text-lg flex-shrink-0 transform transition-transform duration-300 ${
                     openIndex === index ? "rotate-180" : "rotate-0"
                   }`}
                 >
@@ -80,7 +85,7 @@ const FaqSection = () => {
                 className="overflow-hidden"
               >
                 <div className="mt-3 pr-12 pb-2">
-                  <p className="text-base text-gray-500">{faq.answer}</p>
+                  <p className="text-lg text-gray-500">{faq.answer}</p>
                 </div>
               </motion.div>
             </div>

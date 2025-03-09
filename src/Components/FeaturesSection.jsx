@@ -35,13 +35,13 @@ export default function FeaturesSection() {
           />
         </div>
         <div className="w-full md:w-1/2 mt-6 md:mt-0 p-4 md:p-10 ">
-          <p className="text-sm text-(--color-purpel) mb-2">
+          <p className="font-primary text-sm text-(--color-purpel) mb-2">
             Kandela Flexi Splits
           </p>
           <h2 className="font-secondary text-2xl md:text-5xl tracking-[-2px] mb-3 md:mb-4">
             Pay Your Way, On Your Terms
           </h2>
-          <p className="text-[#767676] text-xl md:text-2xl">
+          <p className="font-primary text-[#767676] text-xl md:text-2xl">
             Split any purchase into manageable installments with zero hidden
             fees. Get what you need today and pay later with flexible,
             customizable plans that fit your budget.
@@ -59,13 +59,13 @@ export default function FeaturesSection() {
           />
         </div>
         <div className="w-full md:w-1/2 mt-6 md:mt-0 p-4 md:p-10">
-          <p className="text-sm text-(--color-purpel) mb-2">
+          <p className="font-primary text-sm text-(--color-purpel) mb-2">
             Multi-Currency Wallet
           </p>
           <h2 className="font-secondary text-2xl md:text-5xl tracking-[-2px] mb-3 md:mb-4">
             Spend Globally, Bank Locally
           </h2>
-          <p className="text-[#767676] text-xl md:text-2xl">
+          <p className="font-primary text-[#767676] text-xl md:text-2xl">
             Hold, convert, and send money in multiple currencies with real-time
             exchange rates. If you're shopping online or sending funds abroad,
             seamless transactions are just a tap away.
@@ -83,13 +83,13 @@ export default function FeaturesSection() {
           />
         </div>
         <div className="w-full md:w-1/2 mt-6 md:mt-0 p-4 md:p-10">
-          <p className="text-sm text-(--color-purpel) mb-2">
+          <p className="font-primary text-sm text-(--color-purpel) mb-2">
             AI-Powered Credit
           </p>
           <h2 className="font-secondary text-2xl md:text-5xl tracking-[-2px] mb-3 md:mb-4">
             Smarter Lending, Instant Access
           </h2>
-          <p className="text-[#767676] text-xl md:text-2xl">
+          <p className="font-primary text-[#767676] text-xl md:text-2xl">
             Get access to fair and personalized loans based on real financial
             behavior, no lengthy approvals, no unnecessary paperwork.
           </p>
@@ -106,13 +106,13 @@ export default function FeaturesSection() {
           />
         </div>
         <div className="w-full md:w-1/2 mt-6 md:mt-0 p-4 md:p-10">
-          <p className="text-sm text-(--color-purpel) mb-2">
+          <p className="font-primary text-sm text-(--color-purpel) mb-2">
             Virtual & Physical Cards
           </p>
           <h2 className="font-secondary text-2xl md:text-5xl tracking-[-2px] mb-3 md:mb-4">
             Secure Payments, Anytime, Anywhere
           </h2>
-          <p className="text-[#767676] text-xl md:text-2xl">
+          <p className="font-primary text-[#767676] text-xl md:text-2xl">
             Shop online safely with instant virtual cards or use a physical
             Kandela card for everyday purchases.
           </p>
@@ -129,13 +129,13 @@ export default function FeaturesSection() {
           />
         </div>
         <div className="w-full md:w-1/2 mt-6 md:mt-0 p-4 md:p-10">
-          <p className="text-sm text-(--color-purpel) mb-2">
+          <p className="font-primary text-sm text-(--color-purpel) mb-2">
             High-Yield Savings
           </p>
           <h2 className="font-secondary text-2xl md:text-5xl tracking-[-2px] mb-3 md:mb-4">
             Grow Your Money While You Sleep
           </h2>
-          <p className="text-[#767676] text-xl md:text-2xl">
+          <p className="font-primary text-[#767676] text-xl md:text-2xl">
             Earn competitive interest on your savings while keeping your funds
             easily accessible. Your financial goals, within reach.
           </p>
@@ -152,13 +152,13 @@ export default function FeaturesSection() {
           />
         </div>
         <div className="w-full md:w-1/2 mt-6 md:mt-0 p-4 md:p-10">
-          <p className="text-sm text-(--color-purpel) mb-2">
+          <p className="font-primary text-sm text-(--color-purpel) mb-2">
             Instant Transfers & Bill Payments
           </p>
           <h2 className="font-secondary text-2xl md:text-5xl tracking-[-2px] mb-3 md:mb-4">
             Seamless Transactions, No Hassle
           </h2>
-          <p className="text-[#767676] text-xl md:text-2xl">
+          <p className="font-primary text-[#767676] text-xl md:text-2xl">
             Send and receive money instantly, pay for utilities, and manage
             subscriptions, all from one secure app.
           </p>
