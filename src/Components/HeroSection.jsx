@@ -7,7 +7,7 @@ import Avater3 from "../assets/Avater 3.svg";
 
 const HeroSection = () => {
   return (
-    <div className="herosection -mt-29 min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 overflow-hidden overflow-y-hidden"
+    <div className="herosection -mt-29 min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 overflow-hidden overflow-y-hiddenF"
     style={{ backgroundImage: `url(${BGImage})` }}
     >
       {/* Left side pie chart icon - Hidden on mobile, visible on larger screens */}

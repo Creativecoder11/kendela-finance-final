@@ -6,9 +6,6 @@ import cardImage from "../assets/cards.svg";
 import savings from "../assets/saving.svg";
 import billPaymentImage from "../assets/bill payment.svg";
 
-
-
-
 export default function FeaturesSection() {
   return (
     <div className="container mx-auto px-4 py-8 max-w-6xl">
