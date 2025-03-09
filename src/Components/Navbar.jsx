@@ -8,7 +8,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-white py-3">
+    <nav className="sticky top-0 z-5 py-8">
       <div className="container px-4 mx-auto relative text-sm">
         <div className="flex justify-between items-center">
           {/* Logo */}
@@ -17,7 +17,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <ul className="hidden lg:flex ml-14 space-x-12">
+          <ul className="hidden lg:flex ml-14 space-x-12 ">
             {navItems.map((item, index) => (
               <li key={index}>
                 <a href={item.href} className="hover:text-blue-500">

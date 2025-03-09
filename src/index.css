@@ -14,5 +14,9 @@
   --font-primary: "Satoshi", "sans-serif";
   --breakpoint-3xl: 120rem;
   --color-purpel: #703CDE;
-  /* ... */
+
 }
+/* 
+.herosection{
+  background-image: url(../src/assets/Home\ Banner\ Bg\ Image.svg);
+} */
