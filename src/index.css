@@ -11,12 +11,15 @@
 
 
 @theme {
-  --font-primary: "Satoshi", "sans-serif";
-  --breakpoint-3xl: 120rem;
+  --font-primary: "Inter", "sans-serif";
+  --font-secondary: "Switzer", "sans-serif";
   --color-purpel: #703CDE;
-
+  --color-white: #FFFFFF;
 }
-/* 
-.herosection{
-  background-image: url(../src/assets/Home\ Banner\ Bg\ Image.svg);
-} */
+body {
+  overflow-x: hidden;
+}
+
+root{
+  font-family: var(--font-primary);
+}

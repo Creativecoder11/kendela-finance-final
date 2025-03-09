@@ -1,6 +1,8 @@
 import "./App.css";
-import HerSection from "./Components/HerSection";
+import FeaturesSection from "./Components/FeaturesSection";
+import HeroSection from "./Components/HeroSection";
 import Navbar from "./Components/Navbar";
+import WhyChooseSection from "./Components/WhyChooseSection";
 
 function App() {
   
@@ -8,7 +10,9 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <HerSection></HerSection>
+      <HeroSection></HeroSection>
+      <FeaturesSection></FeaturesSection>
+      <WhyChooseSection></WhyChooseSection>
     </>
   );
 }

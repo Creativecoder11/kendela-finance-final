@@ -1,14 +1,17 @@
 import React from "react";
 import flyIcon  from "../assets/fly icon.svg";
 import BGImage from "../assets/Home Banner Bg Image.svg";
+import Avater1 from "../assets/Avater 1.svg";
+import Avater2 from "../assets/Avater 2.svg";
+import Avater3 from "../assets/Avater 3.svg";
 
-const HerSection = () => {
+const HeroSection = () => {
   return (
-    <div className="herosection -mt-26 relative min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 overflow-hidden -mb[200px]"
+    <div className="herosection -mt-29 min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 overflow-hidden overflow-y-hidden"
     style={{ backgroundImage: `url(${BGImage})` }}
     >
       {/* Left side pie chart icon - Hidden on mobile, visible on larger screens */}
-      <div className="hidden sm:block absolute left-[5%] top-[30%] w-24 h-24 md:w-36 md:h-36 lg:w-48 lg:h-48 z-10 opacity-90">
+      <div className="hidden sm:block absolute  left-[10%] top-[30%] w-24 h-24 md:w-36 md:h-36 lg:w-48 lg:h-48 z-10 opacity-90">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="212"
@@ -86,20 +89,29 @@ const HerSection = () => {
         {/* User count badge - Smaller on mobile */}
         <div className="inline-flex items-center bg-white text-gray-800 rounded-full px-3 py-1 sm:px-4 sm:py-2 mb-4 sm:mb-6 text-xs sm:text-sm">
           <div className="flex mr-1 sm:mr-2">
-            <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gray-300 border-2 border-white"></div>
-            <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gray-300 border-2 border-white -ml-2"></div>
-            <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gray-300 border-2 border-white -ml-2"></div>
+            <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gray-300 border-2 border-[#9F7CE9]">
+              <img className="rounded-full" src={Avater1} alt="avater1" srcset="" />
+
+            </div>
+            <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gray-300 border-2 border-[#9F7CE9] -ml-2">
+              <img className="rounded-full" src={Avater2} alt="avater1" srcset="" />
+
+            </div>
+            <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gray-300 border-2 border-[#9F7CE9] -ml-2">
+              <img className="rounded-full" src={Avater3} alt="avater1" srcset="" />
+
+            </div>
           </div>
-          <span>Join 4,063+ users building their financial freedom</span>
+          <span className="font-primary"> <span className="text-(--color-purpel)">Join 4,063+</span> users building their financial freedom</span>
         </div>
 
         {/* Heading - Responsive text sizing */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
+        <h1 className="font-secondary text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
           Finance on Your Own Terms
         </h1>
 
         {/* Subheading - Adjusted text size for readability on all devices */}
-        <p className="text-base sm:text-lg md:text-xl leading-relaxed mb-6 sm:mb-8 max-w-3xl mx-auto">
+        <p className="font-primary text-base text-[#DCCFF7] sm:text-lg md:text-xl leading-relaxed mb-6 sm:mb-8 max-w-3xl mx-auto">
           With Kandela, you get more than just a digital wallet. Enjoy
           AI-powered credit, flexible Buy Now, Pay Later, multi-currency
           wallets, secure virtual cards, and seamless bill payments, all in one
@@ -107,25 +119,25 @@ const HerSection = () => {
         </p>
 
         {/* Sign up form - Stacked on mobile, side by side on larger screens */}
-        <div className="flex flex-col sm:flex-row gap-3 md:gap-4 max-w-lg sm:max-w-xl md:max-w-2xl mx-auto">
+        <div className="flex flex-col sm:flex-row gap-3 md:gap-4 max-w-lg sm:max-w-xl md:max-w-md mx-auto">
           <input
             type="email"
             placeholder="Enter Email"
-            className="w-full flex-1 px-4 sm:px-6 py-3 sm:py-4 rounded-full bg-purple-600 bg-opacity-40 text-white placeholder-purple-200 focus:outline-none focus:ring-2 focus:ring-white"
+            className="w-full flex-1 px-4 sm:px-6 py-3 sm:py-4 rounded-full bg-[#9F7CE9] bg-opacity-40 text-white placeholder-purple-200 focus:outline-none focus:ring-2 focus:ring-white"
           />
-          <button className="w-full sm:w-auto mt-2 sm:mt-0 px-4 sm:px-6 py-3 sm:py-4 rounded-full bg-white text-purple-700 font-semibold hover:shadow-lg transition transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
+          <button className="w-full sm:w-auto mt-2 sm:mt-0 px-4 sm:px-6 py-3 sm:py-4 rounded-full bg-white text-(--color-purpel) hover:shadow-lg transition transform hover:-translate-x-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
             Join waitlist
           </button>
         </div>
       </div>
 
       {/* Right side paper plane graphics - Hidden on mobile, visible and scaled on larger screens */}
-      <div className="hidden sm:block absolute rotate-10 -right-[30%] top-[54%] w-32 h-32 md:w-48 md:h-48 lg:w-254 lg:h-254 z-10">
+      <div className="hidden sm:block absolute   rotate-10 -right-[30%] top-[54%] w-32 h-32 md:w-48 md:h-48 lg:w-254 lg:h-254 z-10">
         <img src={flyIcon} alt="" srcset="" />
       </div>
 
       {/* Bottom left money bills graphic - Hidden on mobile, visible and scaled on larger screens */}
-      <div className="hidden sm:block absolute left-[10%] bottom-[10%] w-24 h-24 md:w-32 md:h-32 lg:w-36 lg:h-36 z-10 opacity-90">
+      <div className="hidden sm:block absolute left-[20%] bottom-[10%] w-24 h-24 md:w-32 md:h-32 lg:w-36 lg:h-36 z-10 opacity-90">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="112"
@@ -169,4 +181,4 @@ const HerSection = () => {
   );
 };
 
-export default HerSection;
+export default HeroSection;
