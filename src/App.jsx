@@ -1,6 +1,8 @@
 import "./App.css";
+import CTASection from "./Components/CTASection";
 import FaqSection from "./Components/FaqSection";
 import FeaturesSection from "./Components/FeaturesSection";
+import Footer from "./Components/Footer";
 import HeroSection from "./Components/HeroSection";
 import Navbar from "./Components/Navbar";
 import SteapsSection from "./Components/SteapsSection";
@@ -15,6 +17,8 @@ function App() {
       <WhyChooseSection></WhyChooseSection>
       <SteapsSection></SteapsSection>
       <FaqSection></FaqSection>
+      <CTASection></CTASection>
+      <Footer></Footer>
     </>
   );
 }

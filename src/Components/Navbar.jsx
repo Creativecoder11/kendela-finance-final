@@ -1,6 +1,6 @@
 import { useState } from "react";
-import logo from "../assets/Kandela Logo.svg";
-import helpLogo from "../assets/customer-service-01.svg";
+import logo from "../assets/Images/Kandela Logo.svg";
+import helpLogo from "../assets/Icon/customer-service-01.svg";
 import { navItems } from "../Constants/index";
 import { FiMenu, FiX } from "react-icons/fi"; // Import icons for menu toggle
 

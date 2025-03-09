@@ -1,10 +1,10 @@
 import React from "react";
-import flexImage from "../assets/Flexi Splite.svg";
-import currencyImage from "../assets/Multi -Currency.svg";
-import aiPowered from "../assets/Ai Powered.svg";
-import cardImage from "../assets/cards.svg";
-import savings from "../assets/saving.svg";
-import billPaymentImage from "../assets/bill payment.svg";
+import flexImage from "../assets/Images/Flexi Splite.svg";
+import currencyImage from "../assets/Images/Multi -Currency.svg";
+import aiPowered from "../assets/Images/Ai Powered.svg";
+import cardImage from "../assets/Images/cards.svg";
+import savings from "../assets/Images/saving.svg";
+import billPaymentImage from "../assets/Images/bill payment.svg";
 
 export default function FeaturesSection() {
   return (

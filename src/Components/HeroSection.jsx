@@ -1,9 +1,9 @@
 import React from "react";
-import flyIcon  from "../assets/fly icon.svg";
-import BGImage from "../assets/Home Banner Bg Image.svg";
-import Avater1 from "../assets/Avater 1.svg";
-import Avater2 from "../assets/Avater 2.svg";
-import Avater3 from "../assets/Avater 3.svg";
+import flyIcon  from "../assets/Icon/fly icon.svg";
+import BGImage from "../assets/Images/Home Banner Bg Image.svg";
+import Avater1 from "../assets/Icon/Avater 1.svg";
+import Avater2 from "../assets/Icon/Avater 2.svg";
+import Avater3 from "../assets/Icon/Avater 3.svg";
 
 const HeroSection = () => {
   return (
