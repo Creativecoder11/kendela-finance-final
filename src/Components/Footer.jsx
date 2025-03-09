@@ -3,16 +3,16 @@ import logo from "../assets/Images/Kandela Logo.svg";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#2F195D] text-white py-21 px-6 md:px-12">
+    <footer className="bg-[#2F195D] text-white py-21 md:px-0">
       <div className="max-w-6xl mx-auto">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div className="flex flex-row gap-8 mb-12">
           {/* Logo and Description */}
-          <div className="col-span-1">
+          <div className="flex-[30%]">
             <div className="flex items-center mb-4">
               <img src={logo} alt="" srcset="" />
             </div>
-            <p className="text-gray-300 mb-4">
+            <p className="text-gray-400 mb-4">
               Join thousands of users already experiencing the future of banking
               with Kandela Finance. Get early access to our complete suite of
               financial tools.
@@ -20,36 +20,36 @@ export default function Footer() {
           </div>
 
           {/* Products */}
-          <div className="col-span-1">
+          <div className="flex-[20%]">
             <h3 className="text-lg font-medium mb-4">Products</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-white">
                   Flexi Splits
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-white">
                   Digital Wallets
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-white">
                   Virtual Cards
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-white">
                   Savings Accounts
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-white">
                   Business Solutions
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-white">
                   Bill Payments
                 </a>
               </li>
@@ -57,101 +57,102 @@ export default function Footer() {
           </div>
 
           {/* Company */}
-          <div className="col-span-1">
+          <div className="flex-[20%]">
             <h3 className="text-lg font-medium mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-white">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-white">
                   Careers
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-white">
                   Press
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-white">
                   Contact
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Resources and Social */}
-          <div className="col-span-1 grid grid-cols-1 gap-8">
+          {/* Resources*/}
+          <div className="flex-[20%]">
             <div>
               <h3 className="text-lg font-medium mb-4">Resources</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
+                  <a href="#" className="text-gray-400 hover:text-white">
                     Blog
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
+                  <a href="#" className="text-gray-400 hover:text-white">
                     IMS Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
+                  <a href="#" className="text-gray-400 hover:text-white">
                     Security Center
                   </a>
                 </li>
               </ul>
             </div>
+          </div>
 
-            <div>
-              <h3 className="text-lg font-medium mb-4">Social Media</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Twitter
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    LinkedIn
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Facebook
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Instagram
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Youtube
-                  </a>
-                </li>
-              </ul>
-            </div>
+          {/*  Social */}
+          <div className="flex-[20%]">
+            <h3 className="text-lg font-medium mb-4">Social Media</h3>
+            <ul className="space-y-2">
+              <li>
+                <a href="#" className="text-gray-400 hover:text-white">
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-gray-400 hover:text-white">
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-gray-400 hover:text-white">
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-gray-400 hover:text-white">
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-gray-400 hover:text-white">
+                  Youtube
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
         {/* Copyright and Links */}
-        <div className="border-t border-indigo-800 pt-8 flex flex-col md:flex-row justify-between">
+        <div className=" py-8 flex flex-col md:flex-row justify-between">
           <div className="mb-4 md:mb-0">
-            <p className="text-gray-300">Copyright © 2025, Kandela Finance</p>
+            <p className="text-gray-400">Copyright © 2025, Kandela Finance</p>
           </div>
           <div className="flex flex-wrap gap-6">
-            <a href="#" className="text-gray-300 hover:text-white">
+            <a href="#" className="text-gray-400 hover:text-white">
               Privacy Policy
             </a>
-            <a href="#" className="text-gray-300 hover:text-white">
+            <a href="#" className="text-gray-400 hover:text-white">
               Terms and Condition
             </a>
-            <a href="#" className="text-gray-300 hover:text-white">
+            <a href="#" className="text-gray-400 hover:text-white">
               Cookie Policy
             </a>
           </div>

@@ -29,7 +29,7 @@ export default function CTASection() {
         <h1 className="font-secondary text-3xl sm:text-5xl">
           Step Into a New Era <br/> of Finance
         </h1>
-        <p className="mt-3 text-sm sm:text-base text-gray-300">
+        <p className="mt-3 text-sm sm:text-lg text-gray-300">
           Join thousands of users enjoying smarter banking, instant credit, and
           seamless payments all in one secure platform. Sign up in minutes and
           experience financial freedom like never before.
