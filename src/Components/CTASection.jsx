@@ -46,10 +46,10 @@ export default function CTASection() {
               placeholder="Your Email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full flex-1 px-4 md:text-left text-center sm:px-6 py-3 sm:py-2 rounded-full bg-white bg-opacity-40 text-(--color-purpel) placeholder-purple-200 focus:outline-none focus:ring-2 focus:ring-white"
+              className="w-full flex-1 px-4 md:text-left text-center sm:px-6 py-3 sm:py-2 rounded-full bg-white bg-opacity-40 text-(--color-purpel) placeholder-purple-200 focus:outline-none focus:ring-2 focus:ring-purple"
               required
             />
-            <button type="submit" className="w-full md:text-sm sm:w-auto mt-2 sm:mt-0 px-4 sm:px-3 py-3 sm:py-2 rounded-full bg-(--color-purpel) text-white hover:shadow-lg transition transform  md:hover:-translate-x-1 hover:-translate-y-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500" disabled={loading}>
+            <button type="submit" className="w-full md:text-sm sm:w-auto mt-2 sm:mt-0 px-4 sm:px-3 py-3 sm:py-2 rounded-full bg-(--color-purpel) text-white hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500" disabled={loading}>
               {loading ? "Submitting.." : "Join waitlist"}
             </button>
           </form>

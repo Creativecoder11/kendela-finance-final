@@ -400,12 +400,12 @@ export default function Navbar() {
                     placeholder="Your Email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full flex-1 md:text-left text-center px-4 sm:px-4 py-3 sm:py-4 rounded-full bg-purple-500/10 text-(--color-purpel) placeholder-black-200 focus:outline-none focus:ring-2 focus:ring-white"
+                    className="w-full flex-1 md:text-left text-center px-4 sm:px-4 py-3 sm:py-4 rounded-full bg-purple-500/10 text-(--color-purpel) placeholder-black-200 focus:outline-none focus:ring-2 focus:ring-purple"
                     required
                   />
                   <button
                     type="submit"
-                    className="w-full md:text-sm sm:w-auto mt-2 sm:mt-0 px-4 sm:px-4 py-3 sm:py-4 rounded-full bg-(--color-purpel) text-white hover:shadow-lg transition transform  md:hover:-translate-x-1 hover:-translate-y-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                    className="w-full md:text-sm sm:w-auto mt-2 sm:mt-0 px-4 sm:px-4 py-3 sm:py-4 rounded-full bg-(--color-purpel) text-white hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
                     disabled={loading}
                   >
                     {loading ? "Submitting.." : "Join waitlist"}
