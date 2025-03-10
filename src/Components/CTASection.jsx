@@ -54,14 +54,6 @@ export default function CTASection() {
             </button>
           </form>
           {responseMessage && <p className="pt-3">{responseMessage}</p>}
-          {/* <input
-            type="email"
-            placeholder="Enter Email"
-            className="w-full flex-1 px-4 sm:px-6 py-3 sm:py-4 rounded-full bg-[#9F7CE9] bg-opacity-40 text-white placeholder-purple-200 focus:outline-none focus:ring-2 focus:ring-white"
-          />
-          <button type="submit" className="w-full sm:w-auto mt-2 sm:mt-0 px-4 sm:px-6 py-3 sm:py-4 rounded-full bg-white text-(--color-purpel) hover:shadow-lg transition transform hover:-translate-x-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
-            Join waitlist
-          </button> */}
         </div>
       </div>
     </div>

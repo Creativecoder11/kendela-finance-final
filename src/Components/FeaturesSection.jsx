@@ -8,7 +8,7 @@ import billPaymentImage from "../assets/Images/bill payment.svg";
 
 export default function FeaturesSection() {
   return (
-    <div className="container mx-auto px-6 py-8 max-w-6xl">
+    <div id="features" className="container mx-auto px-6 py-8 max-w-6xl">
       {/* Header Section */}
       <div className="text-center mb-12 md:mb-16 mt-6 md:mt-10">
         <p className="font-primary w-full max-w-30 m-auto text-sm rounded-full bg-[#F1ECFC] mb-2 py-3 px-3">

@@ -1,6 +1,5 @@
 import React from "react";
 import useSubmitEmail from "../Hook/EmailCollector"
-
 import flyIcon from "../assets/Images/fly icon.svg";
 import BGImage from "../assets/Images/Home Banner Bg Image.svg";
 import Avater1 from "../assets/Icon/Avater 1.svg";
@@ -219,3 +218,5 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
+

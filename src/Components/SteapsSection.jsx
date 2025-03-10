@@ -6,7 +6,7 @@ import number3 from "../assets/Icon/number3.svg";
 
 export default function SteapsSection() {
   return (
-    <section className="md:py-20 py-12 px-6 max-w-6xl mx-auto">
+    <section id="how-works" className="md:py-20 py-12 px-6 max-w-6xl mx-auto">
       <h1 className="font-secondary text-center text-3xl md:text-[56px] md:tracking-[-2px] tracking-[-1px] mb-0 md:mb-6">
         Get Started in Minutes, Not Days
       </h1>

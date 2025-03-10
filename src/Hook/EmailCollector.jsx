@@ -32,6 +32,7 @@ const useSubmitEmail = () => {
         setFormData({ email: "" }); // Clear form
       } else {
         setResponseMessage("Email address submitted successfully!");
+        setFormData({ email: "" });
       }
     } catch (error) {
       setResponseMessage("Email address submitted successfully!");
