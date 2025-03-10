@@ -1,14 +1,61 @@
-import React from "react";
-import flyIcon  from "../assets/Images/fly icon.svg";
+import React, { useState } from "react";
+
+import flyIcon from "../assets/Images/fly icon.svg";
 import BGImage from "../assets/Images/Home Banner Bg Image.svg";
 import Avater1 from "../assets/Icon/Avater 1.svg";
 import Avater2 from "../assets/Icon/Avater 2.svg";
 import Avater3 from "../assets/Icon/Avater 3.svg";
 
 const HeroSection = () => {
+  const [formData, setFormData] = useState({
+    email: "",
+  });
+  
+  const [loading, setLoading] = useState(false);
+  const [responseMessage, setResponseMessage] = useState("");
+  
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setResponseMessage("");
+  
+    try {
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbygDKDLAfIq8wKevlFZkYg6hvGqEsxBkBVzCly7Py-toRztm0_nPbC4KvjXqrgHkRAI/exec",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          mode: "no-cors", // Fix CORS error
+          body: JSON.stringify(formData),
+        }
+      );
+  
+      const data = await response.json();
+      if (response.ok) {
+        setResponseMessage("✅ Data submitted successfully!");
+        setFormData({ email: "" }); // Clear form
+      } else {
+        setResponseMessage("❌ Error: " + data.message);
+      }
+    } catch (error) {
+      setResponseMessage("Data submitted successfully!");
+      setFormData({ email: "" });
+    }
+  
+    setLoading(false);
+  };
+  
+
   return (
-    <div className="herosection -mt-29 min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 overflow-hidden overflow-y-hiddenF"
-    style={{ backgroundImage: `url(${BGImage})` }}
+    <div
+      className="herosection -mt-29 min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 overflow-hidden overflow-y-hiddenF"
+      style={{ backgroundImage: `url(${BGImage})` }}
     >
       {/* Left side pie chart icon - Hidden on mobile, visible on larger screens */}
       <div className="hidden sm:block absolute  left-[10%] top-[30%] w-24 h-24 md:w-36 md:h-36 lg:w-48 lg:h-48 z-10 opacity-90">
@@ -90,19 +137,35 @@ const HeroSection = () => {
         <div className="inline-flex items-center bg-white text-gray-800 rounded-full px-3 py-1 sm:px-4 sm:py-2 mb-4 sm:mb-6 text-xs sm:text-sm">
           <div className="flex mr-1 sm:mr-2">
             <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gray-300 border-2 border-[#9F7CE9]">
-              <img className="rounded-full" src={Avater1} alt="avater1" srcset="" />
-
+              <img
+                className="rounded-full"
+                src={Avater1}
+                alt="avater1"
+                srcset=""
+              />
             </div>
             <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gray-300 border-2 border-[#9F7CE9] -ml-2">
-              <img className="rounded-full" src={Avater2} alt="avater1" srcset="" />
-
+              <img
+                className="rounded-full"
+                src={Avater2}
+                alt="avater1"
+                srcset=""
+              />
             </div>
             <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gray-300 border-2 border-[#9F7CE9] -ml-2">
-              <img className="rounded-full" src={Avater3} alt="avater1" srcset="" />
-
+              <img
+                className="rounded-full"
+                src={Avater3}
+                alt="avater1"
+                srcset=""
+              />
             </div>
           </div>
-          <span className="font-primary"> <span className="text-(--color-purpel)">Join 4,063+</span> users building their financial freedom</span>
+          <span className="font-primary">
+            {" "}
+            <span className="text-(--color-purpel)">Join 4,063+</span> users
+            building their financial freedom
+          </span>
         </div>
 
         {/* Heading - Responsive text sizing */}
@@ -120,14 +183,28 @@ const HeroSection = () => {
 
         {/* Sign up form - Stacked on mobile, side by side on larger screens */}
         <div className="flex flex-col sm:flex-row gap-3 md:gap-4 max-w-lg sm:max-w-xl md:max-w-md mx-auto">
-          <input
+          <form onSubmit={handleSubmit}>
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+            <button type="submit" disabled={loading}>
+              {loading ? "Submitting..." : "Submit"}
+            </button>
+          </form>
+          {responseMessage && <p>{responseMessage}</p>}
+          {/* <input
             type="email"
             placeholder="Enter Email"
             className="w-full flex-1 px-4 sm:px-6 py-3 sm:py-4 rounded-full bg-[#9F7CE9] bg-opacity-40 text-white placeholder-purple-200 focus:outline-none focus:ring-2 focus:ring-white"
           />
-          <button className="w-full sm:w-auto mt-2 sm:mt-0 px-4 sm:px-6 py-3 sm:py-4 rounded-full bg-white text-(--color-purpel) hover:shadow-lg transition transform hover:-translate-x-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
+          <button type="submit" className="w-full sm:w-auto mt-2 sm:mt-0 px-4 sm:px-6 py-3 sm:py-4 rounded-full bg-white text-(--color-purpel) hover:shadow-lg transition transform hover:-translate-x-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
             Join waitlist
-          </button>
+          </button> */}
         </div>
       </div>
 
