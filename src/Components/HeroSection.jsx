@@ -54,7 +54,7 @@ const HeroSection = () => {
 
   return (
     <div
-      className="herosection -mt-29 min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 overflow-hidden overflow-y-hiddenF"
+      className="herosection md:-mt-24 -mt-22 md:min-h-screen min-h-[620px] flex flex-col items-center justify-center p-4 sm:p-8 overflow-hidden overflow-y-hiddenF"
       style={{ backgroundImage: `url(${BGImage})` }}
     >
       {/* Left side pie chart icon - Hidden on mobile, visible on larger screens */}
@@ -161,15 +161,15 @@ const HeroSection = () => {
               />
             </div>
           </div>
-          <span className="font-primary">
+          <span className="font-primary md:text-sm text-[10px]">
             {" "}
-            <span className="text-(--color-purpel)">Join 4,063+</span> users
+            <span className="text-(--color-purpel) ">Join 4,063+</span> users
             building their financial freedom
           </span>
         </div>
 
         {/* Heading - Responsive text sizing */}
-        <h1 className="font-secondary text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
+        <h1 className="font-secondary text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
           Finance on Your Own Terms
         </h1>
 
@@ -183,14 +183,14 @@ const HeroSection = () => {
 
         {/* Sign up form - Stacked on mobile, side by side on larger screens */}
         <div className="">
-          <form className="flex flex-col sm:flex-row gap-3 md:gap-4 max-w-xl sm:max-w-xl md:max-w-md mx-auto" onSubmit={handleSubmit}>
+          <form className="flex flex-col sm:flex-row gap-1 md:gap-4 max-w-xl sm:max-w-xl md:max-w-md mx-auto" onSubmit={handleSubmit}>
             <input
               type="email"
               name="email"
               placeholder="Your Email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full flex-1 px-4 sm:px-6 py-3 sm:py-4 rounded-full bg-[#9F7CE9] bg-opacity-40 text-white placeholder-purple-200 focus:outline-none focus:ring-2 focus:ring-white"
+              className="w-full flex-1 px-4 md:text-left text-center sm:px-6 py-3 sm:py-4 rounded-full bg-[#9F7CE9] bg-opacity-40 text-white placeholder-purple-200 focus:outline-none focus:ring-2 focus:ring-white"
               required
             />
             <button type="submit" className="w-full sm:w-auto mt-2 sm:mt-0 px-4 sm:px-6 py-3 sm:py-4 rounded-full bg-white text-(--color-purpel) hover:shadow-lg transition transform hover:-translate-x-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500" disabled={loading}>
