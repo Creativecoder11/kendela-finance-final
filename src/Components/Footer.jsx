@@ -3,7 +3,7 @@ import logo from "../assets/Images/Kandela Logo.svg";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#2F195D] text-white py-21 md:px-0">
+    <footer className="font-primary bg-[#2F195D] text-white py-21 md:px-0">
       <div className="max-w-6xl mx-auto">
         {/* Main Footer Content */}
         <div className="flex flex-row gap-8 mb-12">
@@ -112,27 +112,27 @@ export default function Footer() {
             <h3 className="text-lg font-medium mb-4">Social Media</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#" className="text-gray-400 underline hover:text-white">
                   Twitter
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#" className="text-gray-400 underline hover:text-white">
                   LinkedIn
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#" className="text-gray-400 underline hover:text-white">
                   Facebook
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#" className="text-gray-400 underline hover:text-white">
                   Instagram
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#" className="text-gray-400 underline hover:text-white">
                   Youtube
                 </a>
               </li>

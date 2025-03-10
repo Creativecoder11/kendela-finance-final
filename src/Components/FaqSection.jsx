@@ -56,7 +56,7 @@ const FaqSection = () => {
                 onClick={() => toggleFAQ(index)}
               >
                 <h3
-                  className={`text-lg md:text-2xl font-medium transition-colors duration-300 ${
+                  className={`font-secondary text-lg md:text-2xl font-medium transition-colors duration-300 ${
                     openIndex === index ? "text-purple-500" : "text-gray-900"
                   }`}
                 >
@@ -85,7 +85,7 @@ const FaqSection = () => {
                 className="overflow-hidden"
               >
                 <div className="mt-3 pr-12 pb-2">
-                  <p className="text-lg text-gray-500">{faq.answer}</p>
+                  <p className="font-primary text-lg text-gray-500">{faq.answer}</p>
                 </div>
               </motion.div>
             </div>
