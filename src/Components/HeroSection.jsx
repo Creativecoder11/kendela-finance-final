@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import useSubmitEmail from "../Hook/EmailCollector"
 
 import flyIcon from "../assets/Images/fly icon.svg";
 import BGImage from "../assets/Images/Home Banner Bg Image.svg";
@@ -7,50 +8,8 @@ import Avater2 from "../assets/Icon/Avater 2.svg";
 import Avater3 from "../assets/Icon/Avater 3.svg";
 
 const HeroSection = () => {
-  const [formData, setFormData] = useState({
-    email: "",
-  });
-  
-  const [loading, setLoading] = useState(false);
-  const [responseMessage, setResponseMessage] = useState("");
-  
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-  
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setResponseMessage("");
-  
-    try {
-      const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbygDKDLAfIq8wKevlFZkYg6hvGqEsxBkBVzCly7Py-toRztm0_nPbC4KvjXqrgHkRAI/exec",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          mode: "no-cors", // Fix CORS error
-          body: JSON.stringify(formData),
-        }
-      );
-  
-      const data = await response.json();
-      if (response.ok) {
-        setResponseMessage("Email address submitted successfully!");
-        setFormData({ email: "" }); // Clear form
-      } else {
-        setResponseMessage("Error: " + data.message);
-      }
-    } catch (error) {
-      setResponseMessage("Email address submitted successfully!");
-      setFormData({ email: "" });
-    }
-  
-    setLoading(false);
-  };
-  
+  const { formData, loading, responseMessage, handleChange, handleSubmit } =
+    useSubmitEmail();
 
   return (
     <div
@@ -182,7 +141,7 @@ const HeroSection = () => {
         </p>
 
         {/* Sign up form - Stacked on mobile, side by side on larger screens */}
-        <div className="">
+        <div>
           <form className="flex flex-col sm:flex-row gap-1 md:gap-4 max-w-xl sm:max-w-xl md:max-w-md mx-auto" onSubmit={handleSubmit}>
             <input
               type="email"
