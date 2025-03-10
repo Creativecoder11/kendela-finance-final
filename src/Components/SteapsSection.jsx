@@ -1,8 +1,8 @@
 import React from "react";
 import StockImage from "../assets/Images/get start image.svg";
-// import number1 from "../assets/Icon/number 1.svg";
-// import number2 from "../assets/Icon/number 2.svg";
-// import number3 from "../assets/Icon/number 3.svg";
+import number1 from "../assets/Icon/number 1.svg";
+import number2 from "../assets/Icon/number 2.svg";
+import number3 from "../assets/Icon/number 3.svg";
 
 export default function SteapsSection() {
   return (
@@ -28,7 +28,7 @@ export default function SteapsSection() {
           {/* Step 1 */}
 
           <div>
-            {/* <img className="mb-4" src={number1} alt="" srcset="" /> */}
+            <img className="mb-4" src={number1} alt="" srcset="" />
             <h3 className="text-2xl font-secondary font-bold mb-2">Quick Sign-Up</h3>
             <p className="text-[#6C737F] font-primary">
               <span className="font-medium">Action:</span> Enter your email and
@@ -41,7 +41,7 @@ export default function SteapsSection() {
 
           {/* Step 2 */}
           <div>
-            {/* <img className="mb-4" src={number2} alt="" srcset="" /> */}
+            <img className="mb-4" src={number2} alt="" srcset="" />
             <h3 className="text-2xl font-secondary font-bold mb-2">Smart Verification</h3>
             <p className="text-[#6C737F] font-primary">
               <span className="font-medium">Action:</span> Verify your identity with secure, AI-powered authentication
@@ -53,7 +53,7 @@ export default function SteapsSection() {
 
           {/* Step 3 */}
           <div>
-            {/* <img className="mb-4" src={number3} alt="" srcset="" /> */}
+            <img className="mb-4" src={number3} alt="" srcset="" />
             <h3 className="text-2xl font-secondary font-bold mb-2">Account Activation</h3>
             <p className="text-[#6C737F] mb">
               <span className="font-medium font-primary">Action:</span> Select your services and start using Kandela right away. 
