@@ -38,12 +38,12 @@ const FaqSection = () => {
   };
 
   return (
-    <div className="md:py-20 py-0">
+    <div className="md:py-20 py-0 px-5 md:px-0">
       <div className="max-w-4xl mx-auto">
         <h1 className="font-secondary text-center text-3xl md:text-[56px] md:tracking-[-2px] tracking-[-1px] mb-2 md:mb-6">
           Frequently Asked Questions
         </h1>
-        <div className="mt-16">
+        <div className="mt-12 md:mt-16">
           {faqs.map((faq, index) => (
             <div
               key={index}
