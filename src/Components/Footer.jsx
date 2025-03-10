@@ -3,10 +3,10 @@ import logo from "../assets/Images/Kandela Logo.svg";
 
 export default function Footer() {
   return (
-    <footer className="font-primary bg-[#2F195D] text-white py-21 md:px-0">
+    <footer className="font-primary bg-[#2F195D] text-white py-21 px-4 md:px-0">
       <div className="max-w-6xl mx-auto">
         {/* Main Footer Content */}
-        <div className="flex flex-row gap-8 mb-12">
+        <div className="flex md:flex-row flex-col gap-8 mb-12">
           {/* Logo and Description */}
           <div className="flex-[30%]">
             <div className="flex items-center mb-4">
@@ -141,11 +141,11 @@ export default function Footer() {
         </div>
 
         {/* Copyright and Links */}
-        <div className=" py-8 flex flex-col md:flex-row justify-between">
-          <div className="mb-4 md:mb-0">
+        <div className=" py-8 flex flex-col-reverse md:flex-row justify-between">
+          <div className="mb-4 mt-6 md:mt-0 md:mb-0">
             <p className="text-gray-400">Copyright © 2025, Kandela Finance</p>
           </div>
-          <div className="flex flex-wrap gap-6">
+          <div className="flex flex-wrap md:gap-6 gap-3">
             <a href="#" className="text-gray-400 hover:text-white">
               Privacy Policy
             </a>

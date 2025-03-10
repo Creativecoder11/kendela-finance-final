@@ -8,16 +8,16 @@ import billPaymentImage from "../assets/Images/bill payment.svg";
 
 export default function FeaturesSection() {
   return (
-    <div className="container mx-auto px-4 py-8 max-w-6xl">
+    <div className="container mx-auto px-6 py-8 max-w-6xl">
       {/* Header Section */}
       <div className="text-center mb-12 md:mb-16 mt-6 md:mt-10">
         <p className="font-primary w-full max-w-30 m-auto text-sm rounded-full bg-[#F1ECFC] mb-2 py-3 px-3">
           Our Features
         </p>
-        <h1 className="font-secondary text-3xl md:text-[56px] tracking-[-2px] mb-4 md:mb-6">
+        <h1 className="font-secondary text-3xl md:text-[56px] md:tracking-[-2px] tracking-[-1px] mb-4 md:mb-6">
           Everything You Need, in One Platform
         </h1>
-        <p className="font-primary max-w-3xl mx-auto text-gray-600 text-sm md:text-lg">
+        <p className="font-primary max-w-3xl mx-auto text-gray-600 text-lg">
           Take full control of your finances with Kandela's all-in-one digital
           banking experience. From secure transactions to flexible credit
           options, we provide the tools to manage, grow, and simplify your money
@@ -26,7 +26,7 @@ export default function FeaturesSection() {
       </div>
 
       {/* Flex Pay Section */}
-      <div className="flex flex-col md:flex-row items-center mb-16 md:mb-24 gap-6 md:gap-8">
+      <div className="flex flex-col md:flex-row items-center mb-10 md:mb-24 md:gap-8">
         <div className="w-full md:w-1/2 p-4 md:p-10 flex justify-center">
           <img
             src={flexImage}
@@ -34,11 +34,11 @@ export default function FeaturesSection() {
             className="w-full object-contain"
           />
         </div>
-        <div className="w-full md:w-1/2 mt-6 md:mt-0 p-4 md:p-10 ">
+        <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
           <p className="font-primary text-sm text-(--color-purpel) mb-2">
             Kandela Flexi Splits
           </p>
-          <h2 className="font-secondary text-2xl md:text-5xl tracking-[-2px] mb-3 md:mb-4">
+          <h2 className="font-secondary text-3xl md:text-5xl tracking-[-1px] md:tracking-[-2px] mb-3 md:mb-4">
             Pay Your Way, On Your Terms
           </h2>
           <p className="font-primary text-[#767676] text-xl md:text-2xl">
@@ -50,7 +50,7 @@ export default function FeaturesSection() {
       </div>
 
       {/* Multi-Currency Section */}
-      <div className="flex flex-col md:flex-row-reverse items-center mb-16 md:mb-24 gap-6 md:gap-8">
+      <div className="flex flex-col md:flex-row items-center mb-10 md:mb-24 md:gap-8">
         <div className="w-full md:w-1/2 p-4 md:p-10 flex justify-center">
           <img
             src={currencyImage}
@@ -58,11 +58,11 @@ export default function FeaturesSection() {
             className="w-full object-contain"
           />
         </div>
-        <div className="w-full md:w-1/2 mt-6 md:mt-0 p-4 md:p-10">
+        <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
           <p className="font-primary text-sm text-(--color-purpel) mb-2">
             Multi-Currency Wallet
           </p>
-          <h2 className="font-secondary text-2xl md:text-5xl tracking-[-2px] mb-3 md:mb-4">
+          <h2 className="font-secondary text-3xl md:text-5xl tracking-[-1px] md:tracking-[-2px] mb-3 md:mb-4">
             Spend Globally, Bank Locally
           </h2>
           <p className="font-primary text-[#767676] text-xl md:text-2xl">
@@ -74,19 +74,19 @@ export default function FeaturesSection() {
       </div>
 
       {/* Credit Score Section */}
-      <div className="flex flex-col md:flex-row items-center mb-16 md:mb-24 gap-6 md:gap-8">
-        <div className="w-full md:w-1/2 p-4 md:p-10 flex justify-center">
+      <div className="flex flex-col md:flex-row items-center mb-16 md:mb-24 md:gap-8">
+        <div className="w-full md:w-1/2 p-4 md:p-10 md:mb-0 mb-4 flex justify-center">
           <img
             src={aiPowered}
             alt="Credit score dashboard"
             className="w-full object-contain"
           />
         </div>
-        <div className="w-full md:w-1/2 mt-6 md:mt-0 p-4 md:p-10">
+        <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
           <p className="font-primary text-sm text-(--color-purpel) mb-2">
             AI-Powered Credit
           </p>
-          <h2 className="font-secondary text-2xl md:text-5xl tracking-[-2px] mb-3 md:mb-4">
+          <h2 className="font-secondary text-3xl md:text-5xl tracking-[-1px] md:tracking-[-2px] mb-3 md:mb-4">
             Smarter Lending, Instant Access
           </h2>
           <p className="font-primary text-[#767676] text-xl md:text-2xl">
@@ -97,19 +97,19 @@ export default function FeaturesSection() {
       </div>
 
       {/* Secure Payments Section */}
-      <div className="flex flex-col md:flex-row-reverse items-center mb-16 md:mb-24 gap-6 md:gap-8">
-        <div className="w-full md:w-1/2 p-4 md:p-10 flex justify-center">
+      <div className="flex flex-col md:flex-row items-center mb-10 md:mb-24 md:gap-8">
+        <div className="w-full md:w-1/2 p-4 md:p-10 mb-5 md:mb-0 flex justify-center">
           <img
             src={cardImage}
             alt="Payment cards"
             className="w-full object-contain"
           />
         </div>
-        <div className="w-full md:w-1/2 mt-6 md:mt-0 p-4 md:p-10">
+        <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
           <p className="font-primary text-sm text-(--color-purpel) mb-2">
             Virtual & Physical Cards
           </p>
-          <h2 className="font-secondary text-2xl md:text-5xl tracking-[-2px] mb-3 md:mb-4">
+          <h2 className="font-secondary text-3xl md:text-5xl tracking-[-1px] md:tracking-[-2px] mb-3 md:mb-4">
             Secure Payments, Anytime, Anywhere
           </h2>
           <p className="font-primary text-[#767676] text-xl md:text-2xl">
@@ -120,7 +120,7 @@ export default function FeaturesSection() {
       </div>
 
       {/* High-Yield Savings Section */}
-      <div className="flex flex-col md:flex-row items-center mb-16 md:mb-24 gap-6 md:gap-8">
+      <div className="flex flex-col md:flex-row items-center mb-10 md:mb-24 md:gap-8">
         <div className="w-full md:w-1/2 p-4 md:p-10 flex justify-center">
           <img
             src={savings}
@@ -128,11 +128,11 @@ export default function FeaturesSection() {
             className="w-full object-contain"
           />
         </div>
-        <div className="w-full md:w-1/2 mt-6 md:mt-0 p-4 md:p-10">
+        <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
           <p className="font-primary text-sm text-(--color-purpel) mb-2">
             High-Yield Savings
           </p>
-          <h2 className="font-secondary text-2xl md:text-5xl tracking-[-2px] mb-3 md:mb-4">
+          <h2 className="font-secondary text-3xl md:text-5xl tracking-[-1px] md:tracking-[-2px] mb-3 md:mb-4">
             Grow Your Money While You Sleep
           </h2>
           <p className="font-primary text-[#767676] text-xl md:text-2xl">
@@ -143,7 +143,7 @@ export default function FeaturesSection() {
       </div>
 
       {/* Seamless Transactions Section */}
-      <div className="flex flex-col md:flex-row-reverse items-center mb-16 md:mb-24 gap-6 md:gap-8">
+      <div className="flex flex-col md:flex-row items-center mb-10 md:mb-24 md:gap-8">
         <div className="w-full md:w-1/2 p-4 md:p-10 flex justify-center">
           <img
             src={billPaymentImage}
@@ -151,11 +151,11 @@ export default function FeaturesSection() {
             className="w-full object-contain"
           />
         </div>
-        <div className="w-full md:w-1/2 mt-6 md:mt-0 p-4 md:p-10">
+        <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
           <p className="font-primary text-sm text-(--color-purpel) mb-2">
             Instant Transfers & Bill Payments
           </p>
-          <h2 className="font-secondary text-2xl md:text-5xl tracking-[-2px] mb-3 md:mb-4">
+          <h2 className="font-secondary text-3xl md:text-5xl tracking-[-1px] md:tracking-[-2px] mb-3 md:mb-4">
             Seamless Transactions, No Hassle
           </h2>
           <p className="font-primary text-[#767676] text-xl md:text-2xl">

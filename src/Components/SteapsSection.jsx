@@ -6,8 +6,8 @@ import number3 from "../assets/Icon/number3.svg";
 
 export default function SteapsSection() {
   return (
-    <section className="py-20 px-4 max-w-6xl mx-auto">
-      <h1 className="font-secondary text-center text-3xl md:text-[56px] tracking-[-2px] mb-4 md:mb-6">
+    <section className="md:py-20 py-12 px-4 max-w-6xl mx-auto">
+      <h1 className="font-secondary text-center text-3xl md:text-[56px] md:tracking-[-2px] tracking-[-1px] mb-0 md:mb-6">
         Get Started in Minutes, Not Days
       </h1>
 
@@ -18,18 +18,18 @@ export default function SteapsSection() {
             <img
               src={StockImage}
               alt="Person smiling while using smartphone"
-              className="w-full h-[620px] object-cover"
+              className="w-full md:h-[620px] object-cover"
             />
           </div>
         </div>
 
         {/* Right side - Steps */}
-        <div className="w-full lg:w-1/2 space-y-6 pl-10">
+        <div className="w-full lg:w-1/2 space-y-6 md:pl-10">
           {/* Step 1 */}
 
           <div>
-            <img className="mb-4" src={number1} alt="" srcset="" />
-            <h3 className="text-2xl font-secondary font-bold mb-2">Quick Sign-Up</h3>
+            <img className="mb-4 md:h-auto h-14" src={number1} alt="" srcset="" />
+            <h3 className="md:text-2xl text-xl font-secondary font-bold mb-2">Quick Sign-Up</h3>
             <p className="text-[#6C737F] font-primary">
               <span className="font-medium">Action:</span> Enter your email and
               create your account
@@ -41,8 +41,8 @@ export default function SteapsSection() {
 
           {/* Step 2 */}
           <div>
-            <img className="mb-4" src={number2} alt="" srcset="" />
-            <h3 className="text-2xl font-secondary font-bold mb-2">Smart Verification</h3>
+            <img className="mb-4 md:h-auto h-14" src={number2} alt="" srcset="" />
+            <h3 className="md:text-2xl text-xl font-secondary font-bold mb-2">Smart Verification</h3>
             <p className="text-[#6C737F] font-primary">
               <span className="font-medium">Action:</span> Verify your identity with secure, AI-powered authentication
             </p>
@@ -53,8 +53,8 @@ export default function SteapsSection() {
 
           {/* Step 3 */}
           <div>
-            <img className="mb-4" src={number3} alt="" srcset="" />
-            <h3 className="text-2xl font-secondary font-bold mb-2">Account Activation</h3>
+            <img className="mb-4 md:h-auto h-14" src={number3} alt="" srcset="" />
+            <h3 className="md:text-2xl text-xl font-secondary font-bold mb-2">Account Activation</h3>
             <p className="text-[#6C737F] mb">
               <span className="font-medium font-primary">Action:</span> Select your services and start using Kandela right away. 
             </p>

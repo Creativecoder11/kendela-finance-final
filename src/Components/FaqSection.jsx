@@ -38,16 +38,16 @@ const FaqSection = () => {
   };
 
   return (
-    <div className="py-20">
+    <div className="md:py-20 py-0">
       <div className="max-w-4xl mx-auto">
-        <h1 className="font-secondary text-center text-3xl md:text-[56px] tracking-[-2px] mb-4 md:mb-6">
+        <h1 className="font-secondary text-center text-3xl md:text-[56px] md:tracking-[-2px] tracking-[-1px] mb-2 md:mb-6">
           Frequently Asked Questions
         </h1>
         <div className="mt-16">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className={`border-b border-gray-200 py-6 px-10 transition-colors duration-300 ${
+              className={`border-b border-gray-200 py-6 md:px-10 px-5 transition-colors duration-300 ${
                 openIndex === index ? "bg-[#F8F8F8] border-none rounded-3xl" : "bg-white"
               }`}
             >
@@ -56,7 +56,7 @@ const FaqSection = () => {
                 onClick={() => toggleFAQ(index)}
               >
                 <h3
-                  className={`font-secondary text-lg md:text-2xl font-medium transition-colors duration-300 ${
+                  className={`font-secondary text-xl md:text-2xl font-medium transition-colors duration-300 ${
                     openIndex === index ? "text-purple-500" : "text-gray-900"
                   }`}
                 >

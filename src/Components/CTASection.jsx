@@ -4,7 +4,7 @@ import ctaBg from "../assets/Images/cta bg.svg";
 export default function CTASection() {
   return (
     <div
-      className="mt-15 mb-30  max-w-6xl m-auto flex items-center justify-center sm:h-[350px] md:h-[420px] bg-cover bg-center rounded-2xl sm:px-12"
+      className="md:mt-15 my-20 md:mb-30  max-w-6xl m-auto flex items-center justify-center md:h-[420px] h-[480px] bg-cover bg-center rounded-2xl md:px-12 px-4"
       style={{ 
         backgroundImage: `url(${ctaBg})`,
         backgroundSize: "cover",
@@ -26,7 +26,7 @@ export default function CTASection() {
           </span>
         </div>
 
-        <h1 className="font-secondary text-3xl sm:text-5xl">
+        <h1 className="font-secondary text-4xl md:text-5xl">
           Step Into a New Era <br/> of Finance
         </h1>
         <p className="font-primary mt-3 text-sm sm:text-lg text-gray-300">
