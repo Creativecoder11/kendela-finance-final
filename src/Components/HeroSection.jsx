@@ -12,15 +12,15 @@ const HeroSection = () => {
 
   return (
     <div
-      className="herosection md:-mt-24 -mt-22 md:min-h-screen min-h-[620px] flex flex-col items-center justify-center p-4 sm:p-8 overflow-hidden overflow-y-hiddenF"
+      className="herosection md:-mt-26 -mt-23 md:pt-20 pt-20 md:min-h-screen min-h-[620px] flex flex-col items-center justify-center p-4 sm:p-8 overflow-hidden overflow-y-hiddenF"
       style={{ backgroundImage: `url(${BGImage})` }}
     >
       {/* Left side pie chart icon - Hidden on mobile, visible on larger screens */}
-      <div className="hidden sm:block absolute  left-[10%] top-[30%] w-24 h-24 md:w-36 md:h-36 lg:w-48 lg:h-48 z-10 opacity-90">
+      <div className="hidden sm:block absolute left-[09%] top-[24%] z-10">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="212"
-          height="207"
+          width="312"
+          height="240"
           viewBox="0 0 212 207"
           fill="none"
         >
@@ -119,7 +119,7 @@ const HeroSection = () => {
               />
             </div>
           </div>
-          <span className="font-primary md:text-sm text-[10px]">
+          <span className="font-primary md:text-sm text-[12px]">
             {" "}
             <span className="text-(--color-purpel) ">Join 4,063+</span> users
             building their financial freedom
@@ -145,7 +145,7 @@ const HeroSection = () => {
             <input
               type="email"
               name="email"
-              placeholder="Your Email"
+              placeholder="Enter Email"
               value={formData.email}
               onChange={handleChange}
               className="w-full flex-1 px-4 md:text-left text-center sm:px-6 py-3 sm:py-4 rounded-full bg-[#9F7CE9] bg-opacity-40 text-white placeholder-purple-200 focus:outline-none focus:ring-2 focus:ring-white"
@@ -168,16 +168,16 @@ const HeroSection = () => {
       </div>
 
       {/* Right side paper plane graphics - Hidden on mobile, visible and scaled on larger screens */}
-      <div className="hidden sm:block absolute   rotate-10 -right-[30%] top-[54%] w-32 h-32 md:w-48 md:h-48 lg:w-254 lg:h-254 z-10">
+      <div className="hidden sm:block absolute rotate-10 -right-[58%] top-[58%] w-32 h-32 md:w-398 md:h-398 z-10">
         <img src={flyIcon} alt="" srcset="" />
       </div>
 
       {/* Bottom left money bills graphic - Hidden on mobile, visible and scaled on larger screens */}
-      <div className="hidden sm:block absolute left-[20%] bottom-[10%] w-24 h-24 md:w-32 md:h-32 lg:w-36 lg:h-36 z-10 opacity-90">
+      <div className="hidden sm:block absolute left-[22%] bottom-[10%] w-24 h-24 md:w-32 md:h-32 lg:w-36 lg:h-36 z-10">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="112"
-          height="138"
+          width="120"
+          height="200"
           viewBox="0 0 112 138"
           fill="none"
         >

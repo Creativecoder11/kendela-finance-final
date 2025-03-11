@@ -43,7 +43,7 @@ export default function CTASection() {
             <input
               type="email"
               name="email"
-              placeholder="Your Email"
+              placeholder="Enter Email"
               value={formData.email}
               onChange={handleChange}
               className="w-full flex-1 px-4 md:text-left text-center sm:px-6 py-3 sm:py-2 rounded-full bg-white bg-opacity-40 text-(--color-purpel) placeholder-purple-200 focus:outline-none focus:ring-2 focus:ring-purple"

@@ -1,6 +1,6 @@
 import React from "react";
-import flexImage from "../assets/Images/Flexi Splite.svg";
-import currencyImage from "../assets/Images/Multi -Currency.svg";
+import flexImage from "../assets/Images/Flexi Splite.png";
+import currencyImage from "../assets/Images/Multi -Currency.png";
 import aiPowered from "../assets/Images/Ai Powered.svg";
 import cardImage from "../assets/Images/cards.svg";
 import savings from "../assets/Images/saving.svg";
@@ -31,11 +31,11 @@ export default function FeaturesSection() {
           <img
             src={flexImage}
             alt="Shopping cart illustration"
-            className="w-full object-contain"
+            className="w-full md:h-120 h-86 object-cover"
           />
         </div>
         <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
-          <p className="font-primary text-sm text-(--color-purpel) mb-2">
+          <p className="font-primary text-lg text-(--color-purpel) mb-2">
             Kandela Flexi Splits
           </p>
           <h2 className="font-secondary text-3xl md:text-5xl tracking-[-1px] md:tracking-[-2px] mb-3 md:mb-4">
@@ -50,16 +50,16 @@ export default function FeaturesSection() {
       </div>
 
       {/* Multi-Currency Section */}
-      <div className="flex flex-col md:flex-row items-center mb-10 md:mb-24 md:gap-8">
+      <div className="flex flex-col md:flex-row-reverse items-center mb-10 md:mb-24 md:gap-8">
         <div className="w-full md:w-1/2 p-4 md:p-10 flex justify-center">
           <img
             src={currencyImage}
             alt="Currency conversion app"
-            className="w-full object-contain"
+            className="w-full md:h-120 h-86 object-cover"
           />
         </div>
         <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
-          <p className="font-primary text-sm text-(--color-purpel) mb-2">
+          <p className="font-primary text-lg text-(--color-purpel) mb-2">
             Multi-Currency Wallet
           </p>
           <h2 className="font-secondary text-3xl md:text-5xl tracking-[-1px] md:tracking-[-2px] mb-3 md:mb-4">
@@ -79,11 +79,11 @@ export default function FeaturesSection() {
           <img
             src={aiPowered}
             alt="Credit score dashboard"
-            className="w-full object-contain"
+            className="w-full md:h-120 h-86 object-cover"
           />
         </div>
         <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
-          <p className="font-primary text-sm text-(--color-purpel) mb-2">
+          <p className="font-primary text-lg text-(--color-purpel) mb-2">
             AI-Powered Credit
           </p>
           <h2 className="font-secondary text-3xl md:text-5xl tracking-[-1px] md:tracking-[-2px] mb-3 md:mb-4">
@@ -97,16 +97,16 @@ export default function FeaturesSection() {
       </div>
 
       {/* Secure Payments Section */}
-      <div className="flex flex-col md:flex-row items-center mb-10 md:mb-24 md:gap-8">
+      <div className="flex flex-col md:flex-row-reverse items-center mb-10 md:mb-24 md:gap-8">
         <div className="w-full md:w-1/2 p-4 md:p-10 mb-5 md:mb-0 flex justify-center">
           <img
             src={cardImage}
             alt="Payment cards"
-            className="w-full object-contain"
+            className="w-full md:h-81 h-62 object-cover"
           />
         </div>
         <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
-          <p className="font-primary text-sm text-(--color-purpel) mb-2">
+          <p className="font-primary text-lg text-(--color-purpel) mb-2">
             Virtual & Physical Cards
           </p>
           <h2 className="font-secondary text-3xl md:text-5xl tracking-[-1px] md:tracking-[-2px] mb-3 md:mb-4">
@@ -125,11 +125,11 @@ export default function FeaturesSection() {
           <img
             src={savings}
             alt="Piggy bank savings illustration"
-            className="w-full object-contain"
+            className="w-full md:h-120 h-86 object-cover"
           />
         </div>
         <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
-          <p className="font-primary text-sm text-(--color-purpel) mb-2">
+          <p className="font-primary text-lg text-(--color-purpel) mb-2">
             High-Yield Savings
           </p>
           <h2 className="font-secondary text-3xl md:text-5xl tracking-[-1px] md:tracking-[-2px] mb-3 md:mb-4">
@@ -143,16 +143,16 @@ export default function FeaturesSection() {
       </div>
 
       {/* Seamless Transactions Section */}
-      <div className="flex flex-col md:flex-row items-center mb-10 md:mb-24 md:gap-8">
+      <div className="flex flex-col md:flex-row-reverse items-center mb-10 md:mb-24 md:gap-8">
         <div className="w-full md:w-1/2 p-4 md:p-10 flex justify-center">
           <img
             src={billPaymentImage}
             alt="Bill payment app"
-            className="w-full object-contain"
+            className="w-full md:h-120 h-76 object-cover"
           />
         </div>
         <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
-          <p className="font-primary text-sm text-(--color-purpel) mb-2">
+          <p className="font-primary text-lg text-(--color-purpel) mb-2">
             Instant Transfers & Bill Payments
           </p>
           <h2 className="font-secondary text-3xl md:text-5xl tracking-[-1px] md:tracking-[-2px] mb-3 md:mb-4">

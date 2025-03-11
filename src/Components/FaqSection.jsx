@@ -48,7 +48,7 @@ const FaqSection = () => {
             <div
               key={index}
               className={`border-b border-gray-200 py-6 md:px-10 px-5 transition-colors duration-300 ${
-                openIndex === index ? "bg-[#F8F8F8] border-none rounded-3xl" : "bg-white"
+                openIndex === index ? "bg-[#F8F8F8] border-none rounded-3xl mt-3" : "bg-white"
               }`}
             >
               <button
