@@ -1,5 +1,5 @@
 import React from "react";
-import StockImage from "../assets/Images/get start image.svg";
+import StockImage from "../assets/Images/get start image.webp";
 import number1 from "../assets/Icon/number1.svg";
 import number2 from "../assets/Icon/number2.svg";
 import number3 from "../assets/Icon/number3.svg";

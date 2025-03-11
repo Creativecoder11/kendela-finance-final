@@ -1,5 +1,5 @@
 import React from "react";
-import ctaBg from "../assets/Images/cta bg.svg";
+import ctaBg from "../assets/Images/cta bg.webp";
 import useSubmitEmail from "../Hook/EmailCollector"
 
 export default function CTASection() {
