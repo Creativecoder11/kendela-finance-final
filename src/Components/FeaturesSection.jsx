@@ -31,7 +31,7 @@ export default function FeaturesSection() {
           <img
             src={flexImage}
             alt="Shopping cart illustration"
-            className="w-full md:h-130 h-86 md:object-cover object-contain"
+            className="w-full md:h-130 h-90 object-cover"
           />
         </div>
         <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
@@ -55,7 +55,7 @@ export default function FeaturesSection() {
           <img
             src={currencyImage}
             alt="Currency conversion app"
-            className="w-full md:h-140 h-86 md:object-cover object-contain"
+            className="w-full md:h-140 h-86 object-cover"
           />
         </div>
         <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
@@ -79,7 +79,7 @@ export default function FeaturesSection() {
           <img
             src={aiPowered}
             alt="Credit score dashboard"
-            className="w-full md:h-120 h-86 md:object-cover object-contain"
+            className="w-full md:h-120 h-86 object-cover"
           />
         </div>
         <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
@@ -102,7 +102,7 @@ export default function FeaturesSection() {
           <img
             src={cardImage}
             alt="Payment cards"
-            className="w-full md:h-95 h-60 md:object-cover object-contain"
+            className="w-full md:h-95 h-60 object-cover"
           />
         </div>
         <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
@@ -125,7 +125,7 @@ export default function FeaturesSection() {
           <img
             src={savings}
             alt="Piggy bank savings illustration"
-            className="w-full md:h-120 h-86 md:object-cover object-contain"
+            className="w-full md:h-120 h-86 object-cover"
           />
         </div>
         <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
