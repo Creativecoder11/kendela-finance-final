@@ -27,11 +27,11 @@ export default function FeaturesSection() {
 
       {/* Flex Pay Section */}
       <div className="flex flex-col md:flex-row items-center mb-10 md:mb-24 md:gap-8">
-        <div className="w-full md:w-1/2 p-4 md:p-10 flex justify-center">
+        <div className="w-full md:w-1/2 p-4 md:p-0 flex justify-center">
           <img
             src={flexImage}
             alt="Shopping cart illustration"
-            className="w-full md:h-120 h-86 object-cover"
+            className="w-full md:h-130 h-86 object-cover"
           />
         </div>
         <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
@@ -51,11 +51,11 @@ export default function FeaturesSection() {
 
       {/* Multi-Currency Section */}
       <div className="flex flex-col md:flex-row-reverse items-center mb-10 md:mb-24 md:gap-8">
-        <div className="w-full md:w-1/2 p-4 md:p-10 flex justify-center">
+        <div className="w-full md:w-1/2 p-4 md:p-0 flex justify-center">
           <img
             src={currencyImage}
             alt="Currency conversion app"
-            className="w-full md:h-120 h-86 object-cover"
+            className="w-full md:h-140 h-86 object-cover"
           />
         </div>
         <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
@@ -74,8 +74,8 @@ export default function FeaturesSection() {
       </div>
 
       {/* Credit Score Section */}
-      <div className="flex flex-col md:flex-row items-center mb-16 md:mb-24 md:gap-8">
-        <div className="w-full md:w-1/2 p-4 md:p-10 md:mb-0 mb-4 flex justify-center">
+      <div className="flex flex-col md:flex-row items-center mb-16 md:mb-40 md:gap-8">
+        <div className="w-full md:w-1/2 p-4 md:p-0 md:mb-0 mb-4 flex justify-center">
           <img
             src={aiPowered}
             alt="Credit score dashboard"
@@ -97,12 +97,12 @@ export default function FeaturesSection() {
       </div>
 
       {/* Secure Payments Section */}
-      <div className="flex flex-col md:flex-row-reverse items-center mb-10 md:mb-24 md:gap-8">
-        <div className="w-full md:w-1/2 p-4 md:p-10 mb-5 md:mb-0 flex justify-center">
+      <div className="flex flex-col md:flex-row-reverse items-center mb-10 md:mb-40 md:gap-8">
+        <div className="w-full md:w-1/2 p-4 md:p-0 mb-5 md:mb-0 flex justify-center">
           <img
             src={cardImage}
             alt="Payment cards"
-            className="w-full md:h-81 h-62 object-cover"
+            className="w-full md:h-95 h-62 object-cover"
           />
         </div>
         <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
@@ -121,7 +121,7 @@ export default function FeaturesSection() {
 
       {/* High-Yield Savings Section */}
       <div className="flex flex-col md:flex-row items-center mb-10 md:mb-24 md:gap-8">
-        <div className="w-full md:w-1/2 p-4 md:p-10 flex justify-center">
+        <div className="w-full md:w-1/2 p-4 md:p-0 flex justify-center">
           <img
             src={savings}
             alt="Piggy bank savings illustration"
@@ -144,11 +144,11 @@ export default function FeaturesSection() {
 
       {/* Seamless Transactions Section */}
       <div className="flex flex-col md:flex-row-reverse items-center mb-10 md:mb-24 md:gap-8">
-        <div className="w-full md:w-1/2 p-4 md:p-10 flex justify-center">
+        <div className="w-full md:w-1/2 p-4 md:p-0 flex justify-center">
           <img
             src={billPaymentImage}
             alt="Bill payment app"
-            className="w-full md:h-120 h-76 object-cover"
+            className="w-full md:h-116 h-76 object-cover"
           />
         </div>
         <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">

@@ -41,7 +41,7 @@ export default function Navbar() {
               <li key={index}>
                 <a
                   href={item.href}
-                  className="hover:text-black"
+                  className="relative group hover:text-white"
                   onClick={(e) => {
                     e.preventDefault();
                     document
@@ -50,6 +50,8 @@ export default function Navbar() {
                   }}
                 >
                   {item.label}
+                  {/* Sliding Underline Effect */}
+                  <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
                 </a>
               </li>
             ))}
@@ -57,10 +59,7 @@ export default function Navbar() {
 
           {/* Help & Join Waitlist - Desktop */}
           <div className="hidden lg:flex space-x-6 text-[16px] items-center font-primary">
-            <a
-              href="#"
-              className="flex gap-2 items-center text-white hover:text-blue-500"
-            >
+            <a href="#" className="flex gap-2 items-center text-white ">
               Help <img src={helpLogo} alt="Help Icon" className="h-5" />
             </a>
             <button
@@ -75,7 +74,7 @@ export default function Navbar() {
         {/* Mobile Navigation */}
         {isOpen && (
           <div
-            className="lg:hidden bg-white shadow-md rounded-md p-4 absolute w-full left-0 top-full z-50"
+            className="lg:hidden bg-white shadow-md rounded-md p-4 absolute w-[40%] right-8 top-20 z-50"
             onClick={() => setIsOpen(false)}
           >
             <ul className="flex flex-col space-y-4">
@@ -83,7 +82,7 @@ export default function Navbar() {
                 <li key={index}>
                   <a
                     href={item.href}
-                    className="block py-2 text-purple-600 hover:text-black"
+                    className="relative block py-2 text-purple-600 group"
                     onClick={(e) => {
                       e.preventDefault();
                       setIsOpen(false);
@@ -93,6 +92,8 @@ export default function Navbar() {
                     }}
                   >
                     {item.label}
+                    {/* Sliding Underline */}
+                    <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
                   </a>
                 </li>
               ))}
@@ -150,7 +151,9 @@ export default function Navbar() {
                     {loading ? "Submitting.." : "Join waitlist"}
                   </button>
                 </form>
-                {responseMessage && <p className="pt-3 mx-auto">{responseMessage}</p>}
+                {responseMessage && (
+                  <p className="pt-3 mx-auto">{responseMessage}</p>
+                )}
               </div>
             </div>
           </div>
