@@ -1,7 +1,7 @@
 import React from "react";
 import useSubmitEmail from "../Hook/EmailCollector"
 import flyIcon from "../assets/Images/fly icon.svg";
-import BGImage from "../assets/Images/Home Banner Bg Image.svg";
+import BGImage from "../assets/Images/Header Banner BG.webp";
 import Avater1 from "../assets/Icon/Avater 1.svg";
 import Avater2 from "../assets/Icon/Avater 2.svg";
 import Avater3 from "../assets/Icon/Avater 3.svg";
