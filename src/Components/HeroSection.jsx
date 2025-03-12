@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 // import useSubmitEmail from "../Hook/EmailCollector";
 import { usePopup } from "../Hook/PopupContext";
 // import flyIcon from "../assets/Images/fly icon.svg";
-import BGImage from "../assets/Images/Header Banner BG.webp";
+import BGImageDesktop from "../assets/Images/Header Banner BG.webp";
+import BGImageTablet from "../assets/Images/tablet.webp";
+import BGImageMobile from "../assets/Images/mobile.webp";
 import Avater1 from "../assets/Icon/Avater 1.svg";
 import Avater2 from "../assets/Icon/Avater 2.svg";
 import Avater3 from "../assets/Icon/Avater 3.svg";
@@ -11,13 +13,39 @@ const HeroSection = () => {
   // const { formData, loading, responseMessage, handleChange, handleSubmit } =
   //   useSubmitEmail();
   const { openPopup } = usePopup();
+  const [backgroundImage, setBackgroundImage] = useState(BGImageDesktop);
+  
+  // Function to update background image based on window width
+  const updateBackgroundImage = () => {
+    if (window.innerWidth >= 1024) {
+      setBackgroundImage(BGImageDesktop); // Desktop
+    } else if (window.innerWidth >= 768) {
+      setBackgroundImage(BGImageTablet); // Tablet
+    } else {
+      setBackgroundImage(BGImageMobile); // Mobile
+    }
+  };
+  
+  // Set background on initial load and add resize listener
+  useEffect(() => {
+    // Set initial background
+    updateBackgroundImage();
+    
+    // Add event listener for window resize
+    window.addEventListener('resize', updateBackgroundImage);
+    
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', updateBackgroundImage);
+    };
+  }, []);
 
   return (
     <div
       className="herosection md:-mt-28 -mt-28 md:pt-20 pt-20 md:min-h-screen min-h-[660px] flex flex-col items-center justify-center p-4 sm:p-8 overflow-hidden overflow-y-hiddenF"
       style={{
-        backgroundImage: `url(${BGImage})`,
-        backgroundSize: window.innerWidth >= 768 ? "cover" : "3000px auto",
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}

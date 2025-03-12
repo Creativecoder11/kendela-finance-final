@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "../assets/Images/Kandela Logo.svg";
 
 export default function Footer() {
+
+  useEffect(() => {
+    // You can add a smooth scroll behavior on page load or when a specific condition is met.
+    document.documentElement.style.scrollBehavior = "smooth";
+    
+    // Clean up on unmount (if needed)
+    return () => {
+      document.documentElement.style.scrollBehavior = "auto";
+    };
+  }, []);
   return (
     <footer className="font-primary bg-[#2F195D] text-white py-21 px-4 md:px-0">
       <div className="max-w-6xl mx-auto">
@@ -61,24 +71,24 @@ export default function Footer() {
             <h3 className="text-lg font-medium mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <a href="" className="text-gray-400 hover:text-white">
+                <p className="text-gray-400 hover:text-white">
                   About Us
-                </a>
+                </p>
               </li>
               <li>
-                <a href="" className="text-gray-400 hover:text-white">
+                <p className="text-gray-400 hover:text-white">
                   Careers
-                </a>
+                </p>
               </li>
               <li>
-                <a href="" className="text-gray-400 hover:text-white">
+                <p className="text-gray-400 hover:text-white">
                   Press
-                </a>
+                </p>
               </li>
               <li>
-                <a href="" className="text-gray-400 hover:text-white">
+                <p className="text-gray-400 hover:text-white">
                   Contact
-                </a>
+                </p>
               </li>
             </ul>
           </div>
@@ -89,19 +99,19 @@ export default function Footer() {
               <h3 className="text-lg font-medium mb-4">Resources</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="" className="text-gray-400 hover:text-white">
+                  <p className="text-gray-400 hover:text-white">
                     Blog
-                  </a>
+                  </p>
                 </li>
                 <li>
-                  <a href="" className="text-gray-400 hover:text-white">
+                  <p className="text-gray-400 hover:text-white">
                     IMS Policy
-                  </a>
+                  </p>
                 </li>
                 <li>
-                  <a href="" className="text-gray-400 hover:text-white">
+                  <p className="text-gray-400 hover:text-white">
                     Security Center
-                  </a>
+                  </p>
                 </li>
               </ul>
             </div>
@@ -112,34 +122,34 @@ export default function Footer() {
             <h3 className="text-lg font-medium mb-4">Social Media</h3>
             <ul className="space-y-2">
               <li>
-                <a href="" className="text-gray-400 underline hover:text-white">
+                <a href="https://www.linkedin.com/company/kandela-finance" className="text-gray-400 underline hover:text-white">
                   LinkedIn
                 </a>
               </li>
               <li>
-                <a href="" className="text-gray-400 underline hover:text-white">
+                <a href="https://www.instagram.com/kandelafinance?igsh=ejUwM3NpM3EzaXA1" className="text-gray-400 underline hover:text-white">
                   Instagram
                 </a>
               </li>
               <li>
-                <a href="" className="text-gray-400 underline hover:text-white">
+                <p className="text-gray-400 underline hover:text-white">
                   Twitter
-                </a>
+                </p>
               </li>
               <li>
-                <a href="" className="text-gray-400 underline hover:text-white">
+                <p className="text-gray-400 underline hover:text-white">
                   Facebook
-                </a>
+                </p>
               </li>
               <li>
-                <a href="" className="text-gray-400 underline hover:text-white">
+                <p className="text-gray-400 underline hover:text-white">
                   Instagram
-                </a>
+                </p>
               </li>
               <li>
-                <a href="" className="text-gray-400 underline hover:text-white">
+                <p className="text-gray-400 underline hover:text-white">
                   Youtube
-                </a>
+                </p>
               </li>
             </ul>
           </div>
@@ -151,15 +161,15 @@ export default function Footer() {
             <p className="text-gray-400">Copyright © 2025, Kandela Finance</p>
           </div>
           <div className="flex flex-wrap md:gap-6 gap-3">
-            <a href="" className="text-gray-400 hover:text-white">
+            <p className="text-gray-400 hover:text-white">
               Privacy Policy
-            </a>
-            <a href="" className="text-gray-400 hover:text-white">
+            </p>
+            <p className="text-gray-400 hover:text-white">
               Terms and Condition
-            </a>
-            <a href="" className="text-gray-400 hover:text-white">
+            </p>
+            <p className="text-gray-400 hover:text-white">
               Cookie Policy
-            </a>
+            </p>
           </div>
         </div>
 

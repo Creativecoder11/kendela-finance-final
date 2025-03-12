@@ -79,7 +79,7 @@ export default function WaitlistPopup() {
 
         {/* Form */}
         <div className="flex flex-col text-center gap-3">
-          <h2 className="text-xl font-bold mb-4 text-center">
+          <h2 className="text-3xl font-bold mb-4 text-center">
             Early Access Awaits – Join the Waitlist Now!
           </h2>
           <div>

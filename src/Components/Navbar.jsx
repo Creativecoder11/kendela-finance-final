@@ -18,16 +18,6 @@ export default function Navbar() {
         <div className="mx-auto relative text-sm flex justify-between items-center">
           {/* Logo (Left) */}
           <img src={logo} alt="logo" className="w-50" />
-
-          {/* Join Waitlist Button (Center) - Always Visible */}
-          {/* <button
-            className="px-3 py-2 md:ml-0 ml-15 md:text-sm text-[12px] rounded-full bg-white text-purple-600 cursor-pointer lg:hidden"
-            onClick={() => setIsPopupOpen(true)}
-          >
-            Join Waitlist
-          </button> */}
-
-          {/* Mobile Menu Button (Right) */}
           <button
             className="lg:hidden text-2xl text-white"
             onClick={() => setIsOpen(!isOpen)}
@@ -62,12 +52,6 @@ export default function Navbar() {
             <a href="#" className="flex gap-2 items-center text-white ">
               Help <img src={helpLogo} alt="Help Icon" className="h-5" />
             </a>
-            {/* <button
-              className="px-6 py-4 rounded-full bg-white text-(--color-purpel) cursor-pointer"
-              onClick={() => setIsPopupOpen(true)}
-            >
-              Join Waitlist
-            </button> */}
           </div>
         </div>
 
@@ -111,54 +95,6 @@ export default function Navbar() {
           </div>
         )}
       </nav>
-
-      {/* Popup Modal */}
-      {isPopupOpen && (
-        <div className="fixed inset-0 bg-black/80 flex justify-center items-center z-50 p-4">
-          <div className="bg-white py-16 items-center justify-center p-6 rounded-lg shadow-lg w-full max-w-xl relative">
-            {/* Close Button */}
-            <button
-              className="absolute top-2 right-3 text-2xl text-gray-500"
-              onClick={() => setIsPopupOpen(false)}
-            >
-              ×
-            </button>
-
-            {/* Form */}
-            <div className="flex flex-col text-center gap-3">
-              <h2 className="text-xl font-bold mb-4 text-center">
-                Early Access Awaits – Join the Waitlist Now!
-              </h2>
-              <div>
-                <form
-                  className="flex flex-col  sm:flex-row gap-1 md:gap-4 max-w-xl sm:max-w-xl md:max-w-md mx-auto"
-                  onSubmit={handleSubmit}
-                >
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Enter Email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full flex-1 md:text-left text-center px-4 sm:px-4 py-3 sm:py-4 rounded-full bg-purple-500/10 text-(--color-purpel) placeholder-black-200 focus:outline-none focus:ring-2 focus:ring-purple"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    className="w-full md:text-sm sm:w-auto mt-2 sm:mt-0 px-4 sm:px-4 py-3 sm:py-4 rounded-full bg-(--color-purpel) text-white hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
-                    disabled={loading}
-                  >
-                    {loading ? "Submitting.." : "Join waitlist"}
-                  </button>
-                </form>
-                {responseMessage && (
-                  <p className="pt-3 mx-auto">{responseMessage}</p>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </>
   );
 }

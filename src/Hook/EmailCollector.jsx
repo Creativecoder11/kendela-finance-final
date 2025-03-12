@@ -78,14 +78,14 @@ const useSubmitEmail = () => {
       );
 
       if (response.ok) {
-        setResponseMessage("Information submitted successfully!");
+        setResponseMessage("Submission successful! Join our priorities now!");
         setFormData({ email: "", name: "" }); // Clear form
       } else {
-        setResponseMessage("Information submitted successfully!");
+        setResponseMessage("Submission successful! Join our priorities now!");
         setFormData({ email: "", name: "" });
       }
     } catch (error) {
-      setResponseMessage("Information submitted successfully!");
+      setResponseMessage("Submission successful! Join our priorities now!");
       setFormData({ email: "", name: "" });
     }
 
