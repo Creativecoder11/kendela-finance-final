@@ -1,10 +1,13 @@
 import React from "react";
 import ctaBg from "../assets/Images/cta bg.webp";
 import useSubmitEmail from "../Hook/EmailCollector"
+import { usePopup } from "../Hook/PopupContext";
 
 export default function CTASection() {
   const { formData, loading, responseMessage, handleChange, handleSubmit } =
     useSubmitEmail();
+
+    const { openPopup } = usePopup();
   return (
     <div
       className="md:mt-15 my-20 md:mb-30  max-w-6xl m-auto flex items-center justify-center md:h-[420px] h-[480px] bg-cover bg-center rounded-2xl md:px-12 px-4"
@@ -38,7 +41,14 @@ export default function CTASection() {
           experience financial freedom like never before.
         </p>
 
-        <div>
+        <button
+          onClick={openPopup}
+          className="px-6 md:py-4 py-3 mt-5 rounded-full bg-(--color-purpel) text-white cursor-pointer"
+        >
+          Join Our Waitlist
+        </button>
+
+        {/* <div>
           <form className="flex flex-col mt-6 sm:flex-row gap-1 md:gap-4 max-w-xl sm:max-w-xl md:max-w-md mx-auto" onSubmit={handleSubmit}>
             <input
               type="email"
@@ -54,7 +64,7 @@ export default function CTASection() {
             </button>
           </form>
           {responseMessage && <p className="pt-3">{responseMessage}</p>}
-        </div>
+        </div> */}
       </div>
     </div>
   );

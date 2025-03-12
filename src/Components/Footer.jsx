@@ -24,32 +24,32 @@ export default function Footer() {
             <h3 className="text-lg font-medium mb-4">Products</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#flexiSplits" className="text-gray-400 hover:text-white">
                   Flexi Splits
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#digitalWallets" className="text-gray-400 hover:text-white">
                   Digital Wallets
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#virtualCards" className="text-gray-400 hover:text-white">
                   Virtual Cards
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#savingsAccounts" className="text-gray-400 hover:text-white">
                   Savings Accounts
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#businessSolutions" className="text-gray-400 hover:text-white">
                   Business Solutions
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#billPayments" className="text-gray-400 hover:text-white">
                   Bill Payments
                 </a>
               </li>
@@ -61,22 +61,22 @@ export default function Footer() {
             <h3 className="text-lg font-medium mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="" className="text-gray-400 hover:text-white">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="" className="text-gray-400 hover:text-white">
                   Careers
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="" className="text-gray-400 hover:text-white">
                   Press
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="" className="text-gray-400 hover:text-white">
                   Contact
                 </a>
               </li>
@@ -89,17 +89,17 @@ export default function Footer() {
               <h3 className="text-lg font-medium mb-4">Resources</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white">
+                  <a href="" className="text-gray-400 hover:text-white">
                     Blog
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white">
+                  <a href="" className="text-gray-400 hover:text-white">
                     IMS Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white">
+                  <a href="" className="text-gray-400 hover:text-white">
                     Security Center
                   </a>
                 </li>
@@ -112,27 +112,32 @@ export default function Footer() {
             <h3 className="text-lg font-medium mb-4">Social Media</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 underline hover:text-white">
-                  Twitter
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 underline hover:text-white">
+                <a href="" className="text-gray-400 underline hover:text-white">
                   LinkedIn
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 underline hover:text-white">
-                  Facebook
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 underline hover:text-white">
+                <a href="" className="text-gray-400 underline hover:text-white">
                   Instagram
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 underline hover:text-white">
+                <a href="" className="text-gray-400 underline hover:text-white">
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a href="" className="text-gray-400 underline hover:text-white">
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="" className="text-gray-400 underline hover:text-white">
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="" className="text-gray-400 underline hover:text-white">
                   Youtube
                 </a>
               </li>
@@ -146,13 +151,13 @@ export default function Footer() {
             <p className="text-gray-400">Copyright © 2025, Kandela Finance</p>
           </div>
           <div className="flex flex-wrap md:gap-6 gap-3">
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a href="" className="text-gray-400 hover:text-white">
               Privacy Policy
             </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a href="" className="text-gray-400 hover:text-white">
               Terms and Condition
             </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a href="" className="text-gray-400 hover:text-white">
               Cookie Policy
             </a>
           </div>

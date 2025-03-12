@@ -14,18 +14,18 @@ export default function Navbar() {
   return (
     <>
       {/* Navbar */}
-      <nav className="max-w-8xl py-6 px-6 md:px-40 mx-auto z-50 bg-transparent top-0 left-0 w-full relative">
+      <nav className="max-w-8xl py-7 px-6 md:px-40 mx-auto z-50 bg-transparent top-0 left-0 w-full relative">
         <div className="mx-auto relative text-sm flex justify-between items-center">
           {/* Logo (Left) */}
-          <img src={logo} alt="logo" className="w-40" />
+          <img src={logo} alt="logo" className="w-50" />
 
           {/* Join Waitlist Button (Center) - Always Visible */}
-          <button
+          {/* <button
             className="px-3 py-2 md:ml-0 ml-15 md:text-sm text-[12px] rounded-full bg-white text-purple-600 cursor-pointer lg:hidden"
             onClick={() => setIsPopupOpen(true)}
           >
             Join Waitlist
-          </button>
+          </button> */}
 
           {/* Mobile Menu Button (Right) */}
           <button
@@ -36,7 +36,7 @@ export default function Navbar() {
           </button>
 
           {/* Desktop Navigation */}
-          <ul className="hidden lg:flex ml-14 text-[16px] space-x-12 text-white font-primary">
+          <ul className="hidden lg:flex -ml-30 text-[16px] space-x-12 text-white font-primary">
             {navItems.map((item, index) => (
               <li key={index}>
                 <a
@@ -62,12 +62,12 @@ export default function Navbar() {
             <a href="#" className="flex gap-2 items-center text-white ">
               Help <img src={helpLogo} alt="Help Icon" className="h-5" />
             </a>
-            <button
+            {/* <button
               className="px-6 py-4 rounded-full bg-white text-(--color-purpel) cursor-pointer"
               onClick={() => setIsPopupOpen(true)}
             >
               Join Waitlist
-            </button>
+            </button> */}
           </div>
         </div>
 

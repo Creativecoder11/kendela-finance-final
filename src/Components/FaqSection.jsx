@@ -12,24 +12,24 @@ const FaqSection = () => {
         "Kandela is a fully digital financial platform designed for convenience, flexibility, and accessibility. Unlike traditional banks, we offer AI-powered credit assessments, multi-currency wallets, instant virtual cards, and Buy Now, Pay Later options all in one seamless app.",
     },
     {
-      question: "How does Kandela's AI-powered credit work?",
+      question: "⁠How does Kandela’s AI-powered credit work?",
       answer:
-        "Our AI-powered credit system analyzes various financial data points to assess creditworthiness quickly and fairly. This includes transaction history, income patterns, and spending habits to provide personalized credit offers without the lengthy processes of traditional banks.",
+        "Our AI-driven system analyzes your transaction history and financial behavior to assess your creditworthiness in real-time. This allows us to provide fair, personalized loan offers without requiring collateral or a lengthy approval process.",
     },
     {
       question: "Is my money safe with Kandela?",
       answer:
-        "Yes, your funds are fully secured with bank-grade encryption and protection. We implement multiple security measures including two-factor authentication, biometric verification, and real-time fraud monitoring to ensure your financial information remains safe.",
+        "Absolutely. We use bank-grade security, including encryption, multi-factor authentication, and fraud monitoring, to protect your funds and personal data. Your security is our top priority.",
     },
     {
       question: "Can I use Kandela outside of Nigeria?",
       answer:
-        "Yes, Kandela is designed for global use with our multi-currency wallets supporting transactions in major currencies. You can use your Kandela virtual cards for international online purchases and withdrawals at compatible ATMs worldwide.",
+        "Yes! With our multi-currency digital wallet, you can hold, send, and receive money in different currencies. You can also use Kandela’s virtual and physical cards for international transactions.",
     },
     {
       question: "How do I get started with Kandela?",
       answer:
-        "Getting started is simple. Download the Kandela app from your app store, complete the quick registration process with your phone number and email, verify your identity with a valid ID, and link a funding source to begin enjoying our digital banking services.",
+        "Signing up is quick and easy. Enter your email, verify your identity, and activate your account all in just a few minutes. Once you’re set up, you can start managing your finances with ease.",
     },
   ];
 
