@@ -79,7 +79,7 @@ export default function FeaturesSection() {
           <img
             src={aiPowered}
             alt="Credit score dashboard"
-            className="w-full lg:h-auto md:w-full md:h-100 h-auto object-cover"
+            className="w-auto lg:h-auto md:w-full md:h-100 h-80 object-cover"
           />
         </div>
         <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
@@ -102,7 +102,7 @@ export default function FeaturesSection() {
           <img
             src={cardImage}
             alt="Payment cards"
-            className="w-full lg:h-auto md:w-full md:h-65 h-auto object-cover"
+            className="w-auto lg:h-auto md:w-full md:h-65 h-60 object-cover"
           />
         </div>
         <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
