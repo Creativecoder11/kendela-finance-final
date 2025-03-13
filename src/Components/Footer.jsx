@@ -13,7 +13,7 @@ export default function Footer() {
     };
   }, []);
   return (
-    <footer className="font-primary bg-[#2F195D] text-white py-21 px-4 md:px-0">
+    <footer className="font-primary bg-[#2F195D] text-white py-21 px-4 md:px-6 lg:px-4">
       <div className="max-w-6xl mx-auto">
         {/* Main Footer Content */}
         <div className="flex md:flex-row flex-col gap-8 mb-12">

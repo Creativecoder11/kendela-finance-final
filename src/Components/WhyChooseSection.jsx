@@ -7,7 +7,7 @@ export default function WhyChooseSection() {
         <p className="font-primary w-full max-w-35 m-auto text-sm rounded-full bg-[#F1ECFC] mb-2 py-3 px-3">
           Why Choose Us
         </p>
-        <h1 className="font-secondary text-3xl md:text-[56px] md:tracking-[-2px] tracking-[-1px] mb-4 md:mb-6">
+        <h1 className="font-secondary text-3xl md:text-[42px] lg:text-[56px] md:tracking-[-2px] tracking-[-1px] mb-4 md:mb-6">
           Why Trust Kandela Finance
         </h1>
         <p className="font-primary max-w-3xl mx-auto text-gray-600 text-lg md:text-lg">
@@ -40,7 +40,7 @@ export default function WhyChooseSection() {
             </svg>
           </div>
 
-          <h2 className="font-secondary md:text-3xl text-2xl  text-(--color-purpel) mb-4">
+          <h2 className="font-secondary lg:text-3xl md:text2xl text-2xl  text-(--color-purpel) mb-4">
             Smart Technology
             <br />
             That Works for You
@@ -81,7 +81,7 @@ export default function WhyChooseSection() {
             </svg>
           </div>
 
-          <h2 className="font-secondary md:text-3xl text-2xl  text-(--color-purpel) mb-4">
+          <h2 className="font-secondary lg:text-3xl md:text2xl text-2xl  text-(--color-purpel) mb-4">
             Complete Financial
             <br />
             Control in One App
@@ -151,7 +151,7 @@ export default function WhyChooseSection() {
             </svg>
           </div>
 
-          <h2 className="font-secondary md:text-3xl text-2xl  text-(--color-purpel) mb-4">
+          <h2 className="font-secondary lg:text-3xl md:text2xl text-2xl  text-(--color-purpel) mb-4">
           Bank-Grade Security 
             <br />
             You Can Trust

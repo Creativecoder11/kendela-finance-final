@@ -25,7 +25,6 @@ function App() {
       <FaqSection></FaqSection>
       <CTASection></CTASection>
       <Footer></Footer>
-
     </PopupProvider>
     </>
   );

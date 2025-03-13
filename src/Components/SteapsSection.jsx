@@ -6,12 +6,12 @@ import number3 from "../assets/Icon/number3.svg";
 
 export default function SteapsSection() {
   return (
-    <section id="how-works" className="md:py-20 py-12 px-6 max-w-6xl mx-auto">
-      <h1 className="font-secondary text-center text-3xl md:text-[56px] md:tracking-[-2px] tracking-[-1px] mb-0 md:mb-6">
+    <section id="how-works" className="lg:py-20 md:py-10  py-12 px-6 max-w-6xl mx-auto">
+      <h1 className="font-secondary text-center text-3xl  md:text-[42px] lg:text-[56px] md:tracking-[-2px] tracking-[-1px] mb-0 md:mb-2 lg:mb-6">
         Get Started in Minutes, Not Days
       </h1>
 
-      <div className="flex flex-col lg:flex-row items-center gap-8 py-15">
+      <div className="flex flex-col md:flex-row lg:flex-row items-center gap-8 md:gap-2 lg:gap-8 py-15">
         {/* Left side - Image */}
         <div className="w-full lg:w-1/2 ">
           <div className="rounded-lg overflow-hidden">
