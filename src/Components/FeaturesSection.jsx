@@ -1,5 +1,5 @@
 import React from "react";
-import flexImage from "../assets/Images/flex.svg";
+import flexImage from "../assets/Images/flex.webp";
 import currencyImage from "../assets/Images/Multi -Currency 1.svg";
 import aiPowered from "../assets/Images/Ai Powered.svg";
 import cardImage from "../assets/Images/cards.svg";
