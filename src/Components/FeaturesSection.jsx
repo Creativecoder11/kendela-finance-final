@@ -1,6 +1,6 @@
 import React from "react";
-import flexImage from "../assets/Images/Source7_1 (1).png";
-import currencyImage from "../assets/Images/Source7-03 (1).png";
+import flexImage from "../assets/Images/flex.svg";
+import currencyImage from "../assets/Images/Multi -Currency 1.svg";
 import aiPowered from "../assets/Images/Ai Powered.svg";
 import cardImage from "../assets/Images/cards.svg";
 import savings from "../assets/Images/saving.svg";
@@ -26,12 +26,15 @@ export default function FeaturesSection() {
       </div>
 
       {/* Flex Pay Section */}
-      <div id="flexiSplits" className="flex flex-col md:flex-row items-center mb-10 md:mb-24 md:gap-8">
+      <div
+        id="flexiSplits"
+        className="flex flex-col md:flex-row items-center mb-10 md:mb-24 md:gap-8"
+      >
         <div className="w-full md:w-1/2 p-4 md:p-0 flex justify-center">
           <img
             src={flexImage}
             alt="Shopping cart illustration"
-            className="w-full lg:h-130 md:w-full md:h-90 h-80 object-cover"
+            className="w-full h-auto object-contain"
           />
         </div>
         <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
@@ -50,12 +53,15 @@ export default function FeaturesSection() {
       </div>
 
       {/* Multi-Currency Section */}
-      <div id="digitalWallets" className="flex flex-col md:flex-row-reverse items-center mb-10 md:mb-24 md:gap-8">
+      <div
+        id="digitalWallets"
+        className="flex flex-col md:flex-row-reverse items-center mb-10 md:mb-24 md:gap-8"
+      >
         <div className="w-full md:w-1/2 p-4 md:p-0 flex justify-center">
           <img
             src={currencyImage}
             alt="Currency conversion app"
-            className="w-full lg:h-140 md:w-full md:h-100 h-80 object-cover"
+            className="w-full h-auto object-contain"
           />
         </div>
         <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
@@ -74,12 +80,15 @@ export default function FeaturesSection() {
       </div>
 
       {/* Credit Score Section */}
-      <div id="virtualCards" className="flex flex-col md:flex-row items-center mb-16 md:mb-40 md:gap-8">
+      <div
+        id="ai-credit"
+        className="flex flex-col md:flex-row items-center mb-16 md:mb-40 md:gap-8"
+      >
         <div className="w-full md:w-1/2 p-4 md:p-0 md:mb-0 mb-4 flex justify-center">
           <img
             src={aiPowered}
             alt="Credit score dashboard"
-            className="w-auto lg:h-auto md:w-full md:h-100 h-80 object-cover"
+            className="w-full h-auto object-contain"
           />
         </div>
         <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
@@ -97,12 +106,15 @@ export default function FeaturesSection() {
       </div>
 
       {/* Secure Payments Section */}
-      <div id="savingsAccounts" className="flex flex-col md:flex-row-reverse items-center mb-10 md:mb-40 md:gap-8">
+      <div
+        id="virtualCards"
+        className="flex flex-col md:flex-row-reverse items-center mb-10 md:mb-40 md:gap-8"
+      >
         <div className="w-full md:w-1/2 p-4 md:p-0 mb-5 md:mb-0 flex justify-center">
           <img
             src={cardImage}
             alt="Payment cards"
-            className="w-auto lg:h-auto md:w-full md:h-65 h-60 object-cover"
+            className="w-full h-auto object-contain"
           />
         </div>
         <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
@@ -120,12 +132,15 @@ export default function FeaturesSection() {
       </div>
 
       {/* High-Yield Savings Section */}
-      <div id="businessSolutions" className="flex flex-col md:flex-row items-center mb-10 md:mb-24 md:gap-8">
+      <div
+        id="savingsAccounts"
+        className="flex flex-col md:flex-row items-center mb-10 md:mb-24 md:gap-8"
+      >
         <div className="w-full md:w-1/2 p-4 md:p-0 flex justify-center">
           <img
             src={savings}
             alt="Piggy bank savings illustration"
-            className="w-full lg:h-90 md:w-full md:h-80 h-auto object-cover"
+            className="w-full h-auto object-contain"
           />
         </div>
         <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
@@ -143,12 +158,15 @@ export default function FeaturesSection() {
       </div>
 
       {/* Seamless Transactions Section */}
-      <div id="billPayments" className="flex flex-col md:flex-row-reverse items-center mb-10 md:mb-24 md:gap-8">
+      <div
+        id="billPayments"
+        className="flex flex-col md:flex-row-reverse items-center mb-10 md:mb-24 md:gap-8"
+      >
         <div className="w-full md:w-1/2 p-4 md:p-0 flex justify-center">
           <img
             src={billPaymentImage}
             alt="Bill payment app"
-            className="w-full lg:h-auto md:w-full md:h-80 h-auto object-cover"
+            className="w-full h-auto object-contain"
           />
         </div>
         <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">

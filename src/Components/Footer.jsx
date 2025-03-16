@@ -44,6 +44,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href="#ai-credit" className="text-gray-400 hover:text-white">
+                  Business Solutions
+                </a>
+              </li>
+              <li>
                 <a href="#virtualCards" className="text-gray-400 hover:text-white">
                   Virtual Cards
                 </a>
@@ -51,11 +56,6 @@ export default function Footer() {
               <li>
                 <a href="#savingsAccounts" className="text-gray-400 hover:text-white">
                   Savings Accounts
-                </a>
-              </li>
-              <li>
-                <a href="#businessSolutions" className="text-gray-400 hover:text-white">
-                  Business Solutions
                 </a>
               </li>
               <li>
@@ -139,11 +139,6 @@ export default function Footer() {
               <li>
                 <p className="text-gray-400 underline hover:text-white">
                   Facebook
-                </p>
-              </li>
-              <li>
-                <p className="text-gray-400 underline hover:text-white">
-                  Instagram
                 </p>
               </li>
               <li>
