@@ -42,7 +42,7 @@ const HeroSection = () => {
 
   return (
     <div
-      className="herosection lg:-mt-24 md:-mt-28 -mt-28 md:pt-20 pt-20 lg:min-h-screen md:min-h-[680px] min-h-[660px] flex flex-col items-center justify-center p-4 sm:p-8 overflow-hidden overflow-y-hiddenF"
+      className="herosection lg:-mt-26 md:-mt-28 -mt-28 md:pt-20 pt-20 lg:min-h-screen md:min-h-[680px] min-h-[660px] flex flex-col items-center justify-center p-4 sm:p-8 overflow-hidden overflow-y-hiddenF"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',

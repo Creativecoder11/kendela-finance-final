@@ -28,7 +28,7 @@ export default function FeaturesSection() {
       {/* Flex Pay Section */}
       <div
         id="flexiSplits"
-        className="flex flex-col md:flex-row items-center mb-10 md:mb-24 md:gap-8"
+        className="flex flex-col md:flex-row items-center mb-10 md:mb-40 md:pt-20 md:gap-8"
       >
         <div className="w-full md:w-1/2 p-4 md:p-0 flex justify-center">
           <img
@@ -55,7 +55,7 @@ export default function FeaturesSection() {
       {/* Multi-Currency Section */}
       <div
         id="digitalWallets"
-        className="flex flex-col md:flex-row-reverse items-center mb-10 md:mb-24 md:gap-8"
+        className="flex flex-col md:flex-row-reverse items-center mb-10 md:mb-40 md:gap-8"
       >
         <div className="w-full md:w-1/2 p-4 md:p-0 flex justify-center">
           <img

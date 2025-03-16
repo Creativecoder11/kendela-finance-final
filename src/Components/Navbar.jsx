@@ -106,9 +106,9 @@ export default function Navbar() {
 
   return (
     <nav className="w-full top-0 left-0 z-50 ">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 flex justify-between items-center py-6">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 flex justify-between items-center py-6">
         {/* Logo */}
-        <img src={logo} alt="logo" className="w-32 sm:w-44" />
+        <img src={logo} alt="logo" className="w-32 sm:w-50" />
 
         {/* Menu Button - Mobile */}
         <button
