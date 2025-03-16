@@ -37,7 +37,7 @@ export default function FeaturesSection() {
             className="w-full h-auto object-contain"
           />
         </div>
-        <div className="w-full md:w-1/2 mt-0 p-0 md:p-10 ">
+        <div className="w-full md:w-1/2 mt-0 p-0 md:p-10">
           <p className="font-primary text-lg text-(--color-purpel) mb-2">
             Kandela Flexi Splits
           </p>
