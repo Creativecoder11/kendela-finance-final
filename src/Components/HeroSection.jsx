@@ -152,7 +152,7 @@ const HeroSection = () => {
       }}
     >
       {/* Left side pie chart icon - Hidden on mobile, visible on larger screens */}
-      <div className="hidden sm:block absolute lg:left-[9%] lg:top-[24%] md:left-[4%] md:top-[10%] w-24 h-24 md:w-30 md:h-40 lg:w-68 lg:h-68 z-60 opacity-90">
+      <div className="hidden sm:block landscape:hidden landscape:lg:block absolute lg:left-[9%] lg:top-[24%] md:left-[4%] md:top-[10%] w-24 h-24 md:w-30 md:h-40 lg:w-68 lg:h-68 z-60 opacity-90">        
         <svg
           xmlns="http://www.w3.org/2000/svg"
           // width="210"
@@ -272,7 +272,7 @@ const HeroSection = () => {
       </div>
 
       {/* Right side paper plane graphics - Hidden on mobile, visible and scaled on larger screens */}
-      <div className="hidden sm:block absolute lg:-right-[30%] lg:top-[40%] md:-right-[22%] md:top-[36%] w-32 h-32 md:w-110 md:h-110 lg:w-260 lg:h-200 z-10 opacity-90">
+      <div className="hidden sm:block landscape:hidden landscape:lg:block absolute lg:-right-[30%] lg:top-[40%] md:-right-[22%] md:top-[36%] w-32 h-32 md:w-110 md:h-110 lg:w-260 lg:h-200 z-10 opacity-90">
         <svg
           // width="1264"
           // height="830"
@@ -401,7 +401,7 @@ const HeroSection = () => {
       </div>
 
       {/* Bottom left money bills graphic - Hidden on mobile, visible and scaled on larger screens */}
-      <div className="hidden sm:block absolute lg:left-[24%] lg:bottom-[8%] md:left-[20%] md:bottom-[50%] w-24 h-24 md:w-24 md:h-24 lg:w-36 lg:h-36 z-10 opacity-90">
+      <div className="hidden sm:block landscape:hidden landscape:lg:block absolute lg:left-[24%] lg:bottom-[8%] md:left-[20%] md:bottom-[50%] w-24 h-24 md:w-24 md:h-24 lg:w-36 lg:h-36 z-10 opacity-90">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           // width="132"
