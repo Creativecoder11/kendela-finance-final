@@ -18,7 +18,7 @@ export default function Footer() {
         {/* Main Footer Content */}
         <div className="flex md:flex-row flex-col gap-8 mb-12">
           {/* Logo and Description */}
-          <div className="flex-[30%]">
+          <div className="flex-[40%]">
             <div className="flex items-center mb-4">
               <img src={logo} alt="" srcset="" />
             </div>
@@ -67,7 +67,7 @@ export default function Footer() {
           </div>
 
           {/* Company */}
-          <div className="flex-[20%]">
+          <div className="flex-[18%]">
             <h3 className="text-lg font-medium mb-4">Company</h3>
             <ul className="space-y-2">
               <li>

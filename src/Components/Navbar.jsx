@@ -106,7 +106,7 @@ export default function Navbar() {
 
   return (
     <nav className="w-full top-0 left-0 z-50 ">
-      <div className="max-w-8xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 flex justify-between items-center py-6">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 md:px-8 lg:px-24 flex justify-between items-center py-6">
         {/* Logo */}
         <img src={logo} alt="logo" className="w-32 sm:w-50" />
 
@@ -120,7 +120,7 @@ export default function Navbar() {
         </button>
 
         {/* Desktop Navigation */}
-        <ul className="hidden lg:flex space-x-6 md:space-x-8 lg:space-x-10 text-white text-base md:text-lg">
+        <ul className="hidden lg:flex space-x-6 md:space-x-8 lg:space-x-13 lg:-ml-25 text-white text-base md:text-lg">
           {navItems.map((item, index) => (
             <li key={index}>
               <a
