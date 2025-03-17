@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 // import useSubmitEmail from "../Hook/EmailCollector";
 import { usePopup } from "../Hook/PopupContext";
 // import flyIcon from "../assets/Images/fly icon.svg";
-import BGImageDesktop from "../assets/Images/Header Banner BG.webp";
+import BGImageDesktop from "../assets/Images/Header Banner BG.svg";
 import BGImageTablet from "../assets/Images/heademobiletabletbg.webp";
 import BGImageMobile from "../assets/Images/heademobiletabletbg.webp";
 import Avater1 from "../assets/Icon/Avater 1.svg";
