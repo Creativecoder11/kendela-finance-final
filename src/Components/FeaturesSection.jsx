@@ -188,7 +188,7 @@
 
 
 import React, { useState, useEffect } from "react";
-import flexImage from "../assets/Images/flex-upscale.svg";
+import flexImage from "../assets/Images/Source_1 1.svg";
 import currencyImage from "../assets/Images/Multi -Currency 1.svg";
 import aiPowered from "../assets/Images/Ai Powered.svg";
 import cardImage from "../assets/Images/cards.svg";
