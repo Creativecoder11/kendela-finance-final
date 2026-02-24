@@ -122,12 +122,12 @@ export default function Footer() {
             <h3 className="text-lg font-medium mb-4">Social Media</h3>
             <ul className="space-y-2">
               <li>
-                <a href="https://www.linkedin.com/company/kandela-finance" className="text-gray-400 underline hover:text-white">
+                <a href="#" className="text-gray-400 underline hover:text-white">
                   LinkedIn
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/kandelafinance?igsh=ejUwM3NpM3EzaXA1" className="text-gray-400 underline hover:text-white">
+                <a href="#" className="text-gray-400 underline hover:text-white">
                   Instagram
                 </a>
               </li>
