@@ -122,16 +122,6 @@ export default function Footer() {
             <h3 className="text-lg font-medium mb-4">Social Media</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 underline hover:text-white">
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 underline hover:text-white">
-                  Instagram
-                </a>
-              </li>
-              <li>
                 <p className="text-gray-400 underline hover:text-white">
                   Twitter
                 </p>
